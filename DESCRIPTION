@@ -1,13 +1,23 @@
 Package: emoji
-Title: What the Package Does (One Line, Title Case)
+Title: Data About Emojis
 Version: 0.0.0.9000
-Authors@R: 
+Authors@R: c(
     person(given = "Emil",
            family = "Hvitfeldt",
            role = c("aut", "cre"),
            email = "emilhhvitfeldt@gmail.com",
-           comment = c(ORCID = "0000-0002-0679-1945"))
-Description: What the package does (one paragraph).
+           comment = c(ORCID = "0000-0002-0679-1945")),
+    person(given = "Hadley",
+           family = "Wickham",
+           email = "hadley@rstudio.com", 
+           role = "cph", 
+           comment = "Data parsing code from hadley/emo"),
+    person(given = "Romain",
+           family = "François",
+           role = "cph", 
+           comment = "Data parsing code from hadley/emo")
+    )
+Description: Contains data about emojis including revalent metadata.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
