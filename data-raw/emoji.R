@@ -30,11 +30,10 @@ download_tr51 <- function() {
   download.file("https://www.unicode.org/emoji/charts/emoji-ordering.txt",
                 destfile = "data-raw/tr51/emoji-ordering.txt")
 
-  files <- c("emoji-data.txt", "emoji-sequences.txt",
-             "emoji-test.txt", "emoji-zwj-sequences.txt")
+  files <- c("emoji-sequences.txt", "emoji-test.txt", "emoji-zwj-sequences.txt")
 
   walk(files, ~ {
-    url <- glue("https://www.unicode.org/Public/emoji/11.0/{file}", file = .x)
+    url <- glue("https://www.unicode.org/Public/emoji/13.1/{file}", file = .x)
     dest <- glue("data-raw/tr51/{file}", file = .x)
     download.file(url, destfile = dest)
   })
@@ -83,7 +82,8 @@ test <- read_lines("data-raw/tr51/emoji-test.txt") %>%
   filter(!str_detect(txt, "^#")) %>%
   separate(txt, into = c("runes", "qualified", "description"), sep = "[;#]", extra = "merge") %>%
   mutate_all(str_trim) %>%
-  separate(description, sep = " ", into = c("emoji", "name"), extra = "merge")
+  separate(description, sep = " ", into = c("emoji", "name"), extra = "merge") %>%
+  mutate(name = str_remove(name, "^E*[0-9\\.]* "))
 
 ordering <- read_lines("data-raw/tr51/emoji-ordering.txt") %>%
   str_subset("^[^#].*;.*#.*") %>%
@@ -256,7 +256,8 @@ data5 <- left_join(data4, emojilib_tbl, by = "emoji") %>%
   ) %>%
   select(-emojilibname, -emojilibkeyword)
 
-emojis <- data5
+emojis <- data5 %>%
+  select(emoji:nrunes, runes:qualified, everything())
 
 use_data(emojis, overwrite = TRUE)
 
