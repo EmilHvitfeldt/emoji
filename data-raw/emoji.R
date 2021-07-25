@@ -189,7 +189,6 @@ parse_gemoji <- function() {
     map_lgl(negate(is.null))
   data <- data[keep]
 
-
   tag_parse <- function(x) {
     if (is.list(x)) flatten_chr(x) else character()
   }
@@ -257,7 +256,8 @@ data5 <- left_join(data4, emojilib_tbl, by = "emoji") %>%
   select(-emojilibname, -emojilibkeyword)
 
 emojis <- data5 %>%
-  select(emoji:nrunes, runes:qualified, everything())
+  select(emoji:nrunes, runes:qualified, everything()) %>%
+  select(-unicode_version, -ios_version)
 
 use_data(emojis, overwrite = TRUE)
 
@@ -266,6 +266,8 @@ aliases <- emojis %>%
   unnest(cols = c(aliases))
 
 emoji_name <- set_names(aliases$emoji, aliases$aliases)
+emoji_name <- emoji_name[!duplicated(emoji_name)]
+
 use_data(emoji_name, overwrite = TRUE)
 
 kw <- select(emojis, keywords, aliases) %>%
