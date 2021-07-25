@@ -4,10 +4,34 @@
     <loc>https://emilhvitfeldt.github.io/emoji/index.html</loc>
   </url>
   <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_count.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_detect.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_extract.html</loc>
+  </url>
+  <url>
     <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_keyword.html</loc>
   </url>
   <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_locate.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_match.html</loc>
+  </url>
+  <url>
     <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_name.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_replace.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_rx.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/emoji_subset.html</loc>
   </url>
   <url>
     <loc>https://emilhvitfeldt.github.io/emoji/reference/emojis.html</loc>

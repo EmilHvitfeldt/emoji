@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • emoji</title>
+<title>Extract emojis from a string — emoji_match • emoji</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Extract emojis from a string — emoji_match" />
+<meta property="og:description" content="Vectorized over string" />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -105,115 +106,38 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Extract emojis from a string</h1>
+    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/rx.R'><code>R/rx.R</code></a></small>
+    <div class="hidden name"><code>emoji_match.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Vectorized over <code>string</code></p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>emoji_match</span><span class='op'>(</span><span class='va'>string</span><span class='op'>)</span>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-data-sets" class="hasAnchor"><a href="#section-data-sets" class="anchor"></a>Data Sets</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="emojis.html">emojis</a></code> </p>
-        </td>
-        <td><p>Full List of Emojis</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_name.html">emoji_name</a></code> </p>
-        </td>
-        <td><p>Emoji Names</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_keyword.html">emoji_keyword</a></code> </p>
-        </td>
-        <td><p>Emoji Keywords</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_rx.html">emoji_rx</a></code> </p>
-        </td>
-        <td><p>A regular expression to catch all emojis</p></td>
-      </tr>
-    </tbody><tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-emoji-string-functions" class="hasAnchor"><a href="#section-emoji-string-functions" class="anchor"></a>Emoji String Functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="emoji_count.html">emoji_count()</a></code> </p>
-        </td>
-        <td><p>Count the number of emojis in a string</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_detect.html">emoji_detect()</a></code> </p>
-        </td>
-        <td><p>Detect the presence or absence of emojis in a string</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_extract.html">emoji_extract()</a></code> <code><a href="emoji_extract.html">emoji_extract_all()</a></code> </p>
-        </td>
-        <td><p>Extract emojis from a string</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_locate.html">emoji_locate()</a></code> <code><a href="emoji_locate.html">emoji_locate_all()</a></code> </p>
-        </td>
-        <td><p>Lodate the positio of emojis in a string</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_match.html">emoji_match()</a></code> <code><a href="emoji_match.html">emoji_match_all()</a></code> </p>
-        </td>
-        <td><p>Extract emojis from a string</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_replace.html">emoji_replace()</a></code> <code><a href="emoji_replace.html">emoji_replace_all()</a></code> </p>
-        </td>
-        <td><p>Replace emojis in a string</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="emoji_subset.html">emoji_subset()</a></code> <code><a href="emoji_subset.html">emoji_which()</a></code> </p>
-        </td>
-        <td><p>Keep strings containing an emoji, or find positions</p></td>
-      </tr>
-    </tbody>
+<span class='fu'>emoji_match_all</span><span class='op'>(</span><span class='va'>string</span><span class='op'>)</span></pre>
+
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>string</th>
+      <td><p>Input vector</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>see <code><a href='https://stringr.tidyverse.org/reference/str_match.html'>stringr::str_match()</a></code></p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p><a href='https://stringr.tidyverse.org/reference/str_match.html'>stringr::str_match</a></p></div>
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
