@@ -24,11 +24,16 @@ download_emoji <- function() {
 }
 
 download_tr51 <- function() {
+  # https://www.unicode.org/reports/tr51/#emoji_data
   if (!file.exists("data-raw/tr51")) {
     dir.create("data-raw/tr51")
   }
   download.file("https://www.unicode.org/emoji/charts/emoji-ordering.txt",
                 destfile = "data-raw/tr51/emoji-ordering.txt")
+
+
+  download.file("https://www.unicode.org/Public/13.0.0/ucd/emoji/emoji-data.txt",
+                destfile = "data-raw/tr51/emoji-data.txt")
 
   files <- c("emoji-sequences.txt", "emoji-test.txt", "emoji-zwj-sequences.txt")
 
