@@ -1,1 +1,18 @@
 url: https://emilhvitfeldt.github.io/emoji
+
+reference:
+  - title: Data Sets
+    contents:
+    - emojis
+    - emoji_name
+    - emoji_keyword
+    - emoji_rx
+  - title: Emoji String Functions
+    contents:
+    - emoji_count
+    - emoji_detect
+    - emoji_extract
+    - emoji_locate
+    - emoji_match
+    - emoji_replace
+    - emoji_subset
