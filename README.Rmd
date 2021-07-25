@@ -1,0 +1,73 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# emoji
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/EmilHvitfeldt/emoji/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/emoji/actions)
+<!-- badges: end -->
+
+The goal of emoji is to provide up to date information inn the form of data sets on emojis and their use.
+
+## Installation
+
+You can install the released version of emoji from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("emoji")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("EmilHvitfeldt/emoji")
+```
+
+## Example
+
+```{r, echo=FALSE}
+library(tibble)
+```
+
+The main data set in this package is the `emojis` data set which contains almost all the information contained in this package.
+
+```{r}
+library(emoji)
+
+emojis
+```
+
+the `emoji_name` is a vector of emojis with descriptive names 
+
+```{r}
+emoji_name[1:10]
+```
+
+Each of the emojis have zero or more keywords associated with them.
+
+```{r}
+emoji_keyword[c(150:155)]
+```
+
+when can use `emoji_keyword` together with `emoji_name` to show then emojis for each keyword.
+
+```{r}
+lapply(emoji_keyword[c(150:155)], function(x) unname(emoji_name[x]))
+```
+
+## Code of Conduct
+
+Please note that the emoji project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
