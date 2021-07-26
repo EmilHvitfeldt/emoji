@@ -10,11 +10,11 @@ Authors@R: c(
     person(given = "Hadley",
            family = "Wickham",
            email = "hadley@rstudio.com", 
-           role = "cph", 
+           role = "ctb", 
            comment = "Data parsing code from hadley/emo"),
     person(given = "Romain",
            family = "François",
-           role = "cph", 
+           role = "ctb", 
            comment = "Data parsing code from hadley/emo")
     )
 Description: Contains data about emojis with revalent metadata, and functions
