@@ -19,3 +19,10 @@ of integer matrices
 \description{
 Vectorised over \code{string}
 }
+\examples{
+string <- paste(c(letters[1:4], emoji_name[1:6]), collapse = " ")
+
+emoji_locate(string)
+
+emoji_locate_all(string)
+}

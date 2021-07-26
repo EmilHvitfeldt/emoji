@@ -18,6 +18,11 @@ A logical vector
 \description{
 Vectorised over \code{string}
 }
+\examples{
+string <- c(letters[1:4], emoji_name[1:6])
+emoji_detect(string)
+
+}
 \seealso{
 \code{\link[stringr:str_detect]{stringr::str_detect()}}
 }

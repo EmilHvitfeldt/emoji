@@ -20,6 +20,15 @@ A character vector
 \description{
 Keep strings containing an emoji, or find positions
 }
+\examples{
+string <- c(letters[1:4], emoji_name[1:6])
+
+emoji_subset(string) == emoji_name[1:6]
+emoji_subset(string, negate = TRUE)
+
+emoji_which(string)
+emoji_which(string, negate = TRUE)
+}
 \seealso{
 \code{\link[stringr:str_subset]{stringr::str_subset()}}
 }

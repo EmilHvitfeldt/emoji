@@ -22,3 +22,10 @@ A character vector
 \description{
 Vectorised over \code{string} and \code{replacement}
 }
+\examples{
+emoji_replace(emoji_name[1], "_emoji_")
+
+string <- paste(c(letters[1:4], emoji_name[1:6]), collapse = " ")
+
+emoji_replace_all(emoji_name[1:6], "_emoji_")
+}

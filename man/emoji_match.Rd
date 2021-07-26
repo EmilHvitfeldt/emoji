@@ -3,7 +3,7 @@
 \name{emoji_match}
 \alias{emoji_match}
 \alias{emoji_match_all}
-\title{Extract emojis from a string}
+\title{Extract matched emojis from a string}
 \usage{
 emoji_match(string)
 
@@ -17,6 +17,18 @@ see \code{\link[stringr:str_match]{stringr::str_match()}}
 }
 \description{
 Vectorized over \code{string}
+}
+\examples{
+chars <- c(letters[1:4], emoji_name[1:6])
+
+set.seed(1234)
+
+strings <- lapply(1:10, function(x) paste(sample(chars, x), collapse = ""))
+
+extracts <- emoji_match(strings)
+
+
+extracts <- emoji_match_all(strings)
 }
 \seealso{
 \link[stringr:str_match]{stringr::str_match}

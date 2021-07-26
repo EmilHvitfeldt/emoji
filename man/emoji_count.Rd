@@ -15,6 +15,13 @@ An integer vector
 \description{
 Vectorised over \code{string}
 }
+\examples{
+string <- paste(c(letters[1:4], emoji_name[1:6]), collapse = " ")
+
+emoji_count(string)
+
+emoji_count(emoji_name[1:6])
+}
 \seealso{
 \code{\link[stringr:str_count]{stringr::str_count()}}
 }
