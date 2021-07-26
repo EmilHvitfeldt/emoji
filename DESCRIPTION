@@ -1,5 +1,5 @@
 Package: emoji
-Title: Data About Emojis
+Title: Data and Function to Work with Emojis
 Version: 0.0.0.9000
 Authors@R: c(
     person(given = "Emil",
@@ -17,7 +17,8 @@ Authors@R: c(
            role = "cph", 
            comment = "Data parsing code from hadley/emo")
     )
-Description: Contains data about emojis including revalent metadata.
+Description: Contains data about emojis with revalent metadata, and functions
+    to work with emojis when they are in strings.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
