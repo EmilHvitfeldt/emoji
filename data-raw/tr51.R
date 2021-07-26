@@ -18,6 +18,7 @@ parse_emoji_sequence <- function(file) {
     tibble(txt = .) %>%
     separate(txt, into = c("code", "type_field", "description"), sep = "[;#]", extra = "drop") %>%
     mutate_all(str_trim) %>%
+
     mutate(
       points = map(str_split(code, " "), strtoi, base = 16),
       nrunes = map_int(points, length)
@@ -70,12 +71,12 @@ emoji_data_picto <- anti_join(
   filter(emoji_data, type_field == "Emoji"),
   by = "code"
 )
+
 rx_picto <- emoji_data_picto %>%
   pull(points) %>%
   map_chr(code_point_range) %>%
   paste0(collapse = "|") %>%
   paste0("(?:", ., ")\UFE0F")
-
 
 #### emoji sequences
 emoji_sequences <- parse_emoji_sequence("data-raw/tr51/emoji-sequences.txt")
@@ -89,10 +90,30 @@ rx_keycap <- emoji_sequences %>%
 
 # this can probably be simplified as there are some common runes
 rx_subregion_flag <- emoji_sequences %>%
-  filter(type_field == "Emoji_Tag_Sequence") %>%
+  filter(type_field == "RGI_Emoji_Tag_Sequence") %>%
   pull(points) %>%
   stri_enc_fromutf32() %>%
   paste0(collapse = "|")
+
+rx_basic_emoji <-
+  paste(collapse = "|",
+  emoji_sequences %>%
+    filter(type_field == "Basic_Emoji") %>%
+    filter(str_detect(code, "[.]{2}", negate = TRUE)) %>%
+    pull(points) %>%
+    stri_enc_fromutf32() %>%
+    paste0(collapse = "|"),
+  emoji_sequences %>%
+    filter(type_field == "Basic_Emoji" ) %>%
+    filter(str_detect(code, "[.]{2}", negate = FALSE)) %>%
+    mutate(points = map(str_split(code, "[.]{2}"), strtoi, base = 16)) %>%
+    pull(points) %>%
+    map_chr(code_point_range) %>%
+    paste0(collapse = "|")
+)
+
+emoji_sequences %>%
+  count(type_field)
 
 rx_flags <- paste0("[\U1F1E6-\U1F1FF]{2}|", rx_subregion_flag)
 
@@ -178,7 +199,7 @@ rx_pirate_flag <- filter(emoji_zwj_sequences, description == "pirate flag") %>%
   pull(points) %>%
   stri_enc_fromutf32()
 
-rx_zwj_seq <- glue("(?#\n\n--------couple with heart--------\n){rx_couple_sequence}|(?#\n\n--------kiss--------\n){rx_kiss_sequence}|(?#\n\n--------family--------\n){rx_family_sequence}|(?#\n\n--------gendered roles--------\n){rx_zwj_3}|{rx_zwj_4_1}|(?#\n\n--------gendered activities--------\n){rx_zwj_4_2}|{rx_zwj_5}|(?#\n\n--------other zwj sequences--------){rx_rainbow_flag}|{rx_eye}|{rx_pirate_flag}")
+rx_zwj_seq <- glue("(?#\n\n--------couple with heart--------\n){rx_couple_sequence}|(?#\n\n--------kiss--------\n){rx_kiss_sequence}|(?#\n\n--------family--------\n){rx_family_sequence}|(?#\n\n--------gendered roles--------\n){rx_zwj_3}|{rx_zwj_4_1}|(?#\n\n--------gendered activities--------\n){rx_zwj_4_2}|{rx_zwj_5}|(?#\n\n--------other zwj sequences--------){rx_rainbow_flag}|{rx_eye}|{rx_pirate_flag}|{rx_basic_emoji}")
 
 ####### final rx
 emoji_rx <- unclass(glue("{rx_zwj_seq}|{rx_sequences}|(?#\n\n--------Emoji_Presentation--------){rx_presentation}|(?#\n\n--------Emoji--------){rx_emoji}|(?#\n\n--------Extended_Pictographic--------){rx_picto}"))
