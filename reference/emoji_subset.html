@@ -141,6 +141,16 @@
 
     <div class='dont-index'><p><code><a href='https://stringr.tidyverse.org/reference/str_subset.html'>stringr::str_subset()</a></code></p></div>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='va'>string</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>letters</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span><span class='op'>]</span>, <span class='va'>emoji_name</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span><span class='op'>)</span>
+
+<span class='fu'>emoji_subset</span><span class='op'>(</span><span class='va'>string</span><span class='op'>)</span> <span class='op'>==</span> <span class='va'>emoji_name</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span>
+</div><div class='output co'>#&gt;    grinning      smiley       smile        grin    laughing sweat_smile 
+#&gt;        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE </div><div class='input'><span class='fu'>emoji_subset</span><span class='op'>(</span><span class='va'>string</span>, negate <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "a" "b" "c" "d"</div><div class='input'>
+<span class='fu'>emoji_which</span><span class='op'>(</span><span class='va'>string</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1]  5  6  7  8  9 10</div><div class='input'><span class='fu'>emoji_which</span><span class='op'>(</span><span class='va'>string</span>, negate <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] 1 2 3 4</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
