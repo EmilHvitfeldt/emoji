@@ -16,11 +16,6 @@ A logical vector
 \description{
 Vectorised over \code{string}
 }
-\examples{
-
-text <- "I love \u1F32E"
-emoji_subset(text)
-}
 \seealso{
 \code{\link[stringr:str_detect]{stringr::str_detect()}}
 }

@@ -19,10 +19,6 @@
 #'
 #' @importFrom stringr str_detect
 #'
-#' @examples
-#'
-#' text <- "I love \u1F32E"
-#' emoji_subset(text)
 #' @export
 emoji_detect <- function(string) str_detect(string, emoji::emoji_rx)
 
