@@ -26,7 +26,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1.9001
 Depends: 
     R (>= 2.10)
-URL: https://emilhvitfeldt.github.io/emoji, https://github.com/EmilHvitfeldt/emoji
+URL: https://emilhvitfeldt.github.io/emoji/, https://github.com/EmilHvitfeldt/emoji
 BugReports: https://github.com/EmilHvitfeldt/emoji/issues
 Imports: 
     stringr
