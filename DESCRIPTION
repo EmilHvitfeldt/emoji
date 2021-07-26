@@ -17,7 +17,7 @@ Authors@R: c(
            role = "ctb", 
            comment = "Data parsing code from hadley/emo")
     )
-Description: Contains data about emojis with revalent metadata, and functions
+Description: Contains data about emojis with relevant metadata, and functions
     to work with emojis when they are in strings.
 License: MIT + file LICENSE
 Encoding: UTF-8
