@@ -4,3 +4,7 @@
 .httr-oauth
 .DS_Store
 docs
+data-raw/emoji_current
+data-raw/emojilib
+data-raw/gemoji
+data-raw/tr51
