@@ -3,7 +3,7 @@
 \name{emoji_locate}
 \alias{emoji_locate}
 \alias{emoji_locate_all}
-\title{Lodate the positio of emojis in a string}
+\title{Locate the position of emojis in a string}
 \usage{
 emoji_locate(string)
 

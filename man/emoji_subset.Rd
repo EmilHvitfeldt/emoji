@@ -5,12 +5,14 @@
 \alias{emoji_which}
 \title{Keep strings containing an emoji, or find positions}
 \usage{
-emoji_subset(string)
+emoji_subset(string, negate = FALSE)
 
-emoji_which(string)
+emoji_which(string, negate = FALSE)
 }
 \arguments{
 \item{string}{input vector}
+
+\item{negate}{If \code{TRUE}, return non-matching elements.}
 }
 \value{
 A character vector

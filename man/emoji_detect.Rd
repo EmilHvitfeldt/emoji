@@ -4,11 +4,13 @@
 \alias{emoji_detect}
 \title{Detect the presence or absence of emojis in a string}
 \usage{
-emoji_detect(string)
+emoji_detect(string, negate = FALSE)
 }
 \arguments{
 \item{string}{Input vector. Either a character vector, or something coercible
-to one}
+to one.}
+
+\item{negate}{If \code{TRUE}, return non-matching elements.}
 }
 \value{
 A logical vector

@@ -15,3 +15,6 @@ An integer vector
 \description{
 Vectorised over \code{string}
 }
+\seealso{
+\code{\link[stringr:str_count]{stringr::str_count()}}
+}

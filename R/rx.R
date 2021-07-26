@@ -13,29 +13,36 @@
 #' Vectorised over `string`
 #'
 #' @param string Input vector. Either a character vector, or something coercible
-#'     to one
+#'     to one.
+#' @inheritParams stringr::str_detect
+#'
 #' @return A logical vector
 #' @seealso [stringr::str_detect()]
 #'
-#' @importFrom stringr str_detect
-#'
 #' @export
-emoji_detect <- function(string) str_detect(string, emoji::emoji_rx)
+emoji_detect <- function(string, negate = FALSE) {
+  str_detect(string, emoji::emoji_rx, negate)
+}
 
 #' Keep strings containing an emoji, or find positions
 #'
 #' @param string input vector
+#' @inheritParams stringr::str_subset
+#'
 #' @return A character vector
 #'
 #' @seealso [stringr::str_subset()]
-#' @importFrom stringr str_subset
 #' @export
-emoji_subset <- function(string) str_subset(string, emoji::emoji_rx)
+emoji_subset <- function(string, negate = FALSE) {
+  str_subset(string, emoji::emoji_rx, negate)
+}
 
 #' @rdname emoji_subset
-#' @importFrom stringr str_which
+#'
 #' @export
-emoji_which <- function(string) str_which(string, emoji::emoji_rx)
+emoji_which <- function(string, negate = FALSE) {
+  str_which(string, emoji::emoji_rx, negate)
+}
 
 #' Count the number of emojis in a string
 #'
@@ -43,7 +50,7 @@ emoji_which <- function(string) str_which(string, emoji::emoji_rx)
 #'
 #' @param string Input vector
 #' @return An integer vector
-#' @importFrom stringr str_count
+#' @seealso [stringr::str_count()]
 #' @export
 emoji_count <- function(string) str_count(string, emoji::emoji_rx)
 
@@ -56,7 +63,7 @@ emoji_count <- function(string) str_count(string, emoji::emoji_rx)
 #'
 #' @seealso [stringr::str_extract()] and [stringr::str_extract_all()]
 #' @return A character vector
-#' @importFrom stringr str_extract str_extract_all
+#' @export
 emoji_extract <- function(string) str_extract(string, emoji::emoji_rx)
 
 #' @rdname emoji_extract
@@ -73,7 +80,6 @@ emoji_extract_all <- function(string, simplify = FALSE) {
 #' @return see [stringr::str_match()]
 #'
 #' @seealso [stringr::str_match]
-#' @importFrom stringr str_match str_match_all
 #' @export
 emoji_match <- function(string) str_match(string, emoji::emoji_rx)
 
@@ -91,8 +97,8 @@ emoji_match_all <- function(string) str_match_all(string, emoji::emoji_rx)
 #'   for details
 #'
 #' @return A character vector
-#' @importFrom stringr str_replace str_replace_all
-emoji_replace <- function( string, replacement) {
+#' @export
+emoji_replace <- function(string, replacement) {
   str_replace(string, emoji::emoji_rx, replacement)
 }
 
@@ -102,15 +108,14 @@ emoji_replace_all <- function(string, replacement) {
   str_replace_all(string, emoji::emoji_rx, replacement)
 }
 
-#' Lodate the positio of emojis in a string
+#' Locate the position of emojis in a string
 #'
 #' Vectorised over `string`
 #'
 #' @param string Input vector
 #' @return For `emoji_locate` an integer matrix, for `emoji_locate_all` a list
 #'   of integer matrices
-#'
-#' @importFrom stringr str_locate str_locate_all
+#' @export
 emoji_locate <- function(string) str_locate(string, emoji::emoji_rx)
 
 #' @rdname emoji_locate

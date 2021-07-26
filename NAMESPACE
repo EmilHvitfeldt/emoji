@@ -2,10 +2,13 @@
 
 export(emoji_count)
 export(emoji_detect)
+export(emoji_extract)
 export(emoji_extract_all)
+export(emoji_locate)
 export(emoji_locate_all)
 export(emoji_match)
 export(emoji_match_all)
+export(emoji_replace)
 export(emoji_replace_all)
 export(emoji_subset)
 export(emoji_which)
