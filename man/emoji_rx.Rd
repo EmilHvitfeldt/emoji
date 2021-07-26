@@ -14,6 +14,7 @@ character vector
 emoji_rx
 }
 \description{
-A regular expression to catch all emojis
+This regex will capture all \code{fully-qualified} and \code{minimally-qualified}
+emojis.
 }
 \keyword{datasets}

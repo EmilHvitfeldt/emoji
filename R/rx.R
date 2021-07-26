@@ -1,5 +1,8 @@
 #' A regular expression to catch all emojis
 #'
+#' This regex will capture all `fully-qualified` and `minimally-qualified`
+#' emojis.
+#'
 #' @source \url{https://www.unicode.org/reports/tr51/#emoji_data}
 #'
 #' @format character vector
@@ -15,6 +18,11 @@
 #' @seealso [stringr::str_detect()]
 #'
 #' @importFrom stringr str_detect
+#'
+#' @examples
+#'
+#' text <- "I love \u1F32E"
+#' emoji_subset(text)
 #' @export
 emoji_detect <- function(string) str_detect(string, emoji::emoji_rx)
 

@@ -29,3 +29,6 @@ URL: https://emilhvitfeldt.github.io/emoji, https://github.com/EmilHvitfeldt/emo
 BugReports: https://github.com/EmilHvitfeldt/emoji/issues
 Imports: 
     stringr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
