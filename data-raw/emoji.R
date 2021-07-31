@@ -271,7 +271,7 @@ aliases <- emojis %>%
   unnest(cols = c(aliases))
 
 emoji_name <- set_names(aliases$emoji, aliases$aliases)
-emoji_name <- emoji_name[!duplicated(emoji_name)]
+emoji_name <- emoji_name[!duplicated(names(emoji_name))]
 
 use_data(emoji_name, overwrite = TRUE)
 

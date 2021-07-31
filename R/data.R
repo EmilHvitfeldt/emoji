@@ -47,6 +47,10 @@
 #' descriptive identifiers for the emojis. This vector is well suited to be used
 #' as a tool to replace emojis with natural language descriptions.
 #'
+#' Some emojis will appear multiple times since they have multiple names
+#' associated with them. Such as "grinning" and "grinning_face" leading to the
+#' same emoji.
+#'
 #' @source [Unicode® Full Emoji Charts v13.1](https://www.unicode.org/emoji/charts-13.1/full-emoji-list.html)
 #' @source [Unicode® Emoji Charts v13.1](https://www.unicode.org/emoji/charts-13.1/emoji-list.html)
 #' @source [Unicode® Emoji Ordering, v13.1](https://www.unicode.org/emoji/charts/emoji-ordering.txt)

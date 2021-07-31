@@ -5,7 +5,7 @@
 \alias{emoji_name}
 \title{Emoji Names}
 \format{
-named character vector with 4406 elements
+named character vector with 4426 elements
 }
 \source{
 \href{https://www.unicode.org/emoji/charts-13.1/full-emoji-list.html}{Unicode® Full Emoji Charts v13.1}
@@ -25,6 +25,11 @@ emoji_name
 This vector is a named vector of emojis, where then names are unique
 descriptive identifiers for the emojis. This vector is well suited to be used
 as a tool to replace emojis with natural language descriptions.
+}
+\details{
+Some emojis will appear multiple times since they have multiple names
+associated with them. Such as "grinning" and "grinning_face" leading to the
+same emoji.
 }
 \seealso{
 emojis emoji_keyboard
