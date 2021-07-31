@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Keep strings containing an emoji, or find positions — emoji_subset • emoji</title>
+<title>List all emoji with a given keyword — emoji_find • emoji</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Keep strings containing an emoji, or find positions — emoji_subset" />
-<meta property="og:description" content="Keep strings containing an emoji, or find positions" />
+<meta property="og:title" content="List all emoji with a given keyword — emoji_find" />
+<meta property="og:description" content="This function will look in emoji_keyword to report back the given emojis." />
 
 
 
@@ -111,53 +111,66 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Keep strings containing an emoji, or find positions</h1>
-    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/rx.R'><code>R/rx.R</code></a></small>
-    <div class="hidden name"><code>emoji_subset.Rd</code></div>
+    <h1>List all emoji with a given keyword</h1>
+    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/emoji.R'><code>R/emoji.R</code></a></small>
+    <div class="hidden name"><code>emoji_find.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Keep strings containing an emoji, or find positions</p>
+    <p>This function will look in <code>emoji_keyword</code> to report back the given emojis.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>emoji_subset</span><span class='op'>(</span><span class='va'>string</span>, negate <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
-
-<span class='fu'>emoji_which</span><span class='op'>(</span><span class='va'>string</span>, negate <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>emoji_find</span><span class='op'>(</span><span class='va'>keyword</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>string</th>
-      <td><p>input vector</p></td>
-    </tr>
-    <tr>
-      <th>negate</th>
-      <td><p>If <code>TRUE</code>, return non-matching elements.</p></td>
+      <th>keyword</th>
+      <td><p>Character, Emoji keyword.</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A character vector</p>
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p><code><a href='https://stringr.tidyverse.org/reference/str_subset.html'>stringr::str_subset()</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='va'>string</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='va'>letters</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span><span class='op'>]</span>, <span class='va'>emoji_name</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span><span class='op'>)</span>
-
-<span class='fu'>emoji_subset</span><span class='op'>(</span><span class='va'>string</span><span class='op'>)</span> <span class='op'>==</span> <span class='va'>emoji_name</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>]</span>
-</div><div class='output co'>#&gt;                        grinning                   grinning_face 
-#&gt;                            TRUE                            TRUE 
-#&gt;                          smiley     grinning_face_with_big_eyes 
-#&gt;                            TRUE                            TRUE 
-#&gt;                           smile grinning_face_with_smiling_eyes 
-#&gt;                            TRUE                            TRUE </div><div class='input'><span class='fu'>emoji_subset</span><span class='op'>(</span><span class='va'>string</span>, negate <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "a" "b" "c" "d"</div><div class='input'>
-<span class='fu'>emoji_which</span><span class='op'>(</span><span class='va'>string</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1]  5  6  7  8  9 10</div><div class='input'><span class='fu'>emoji_which</span><span class='op'>(</span><span class='va'>string</span>, negate <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] 1 2 3 4</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>emoji_find</span><span class='op'>(</span><span class='st'>"happy"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 5 × 2</span>
+#&gt;   name         emoji
+#&gt;   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>        <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>
+#&gt; <span style='color: #BCBCBC;'>1</span> grinning     😀   
+#&gt; <span style='color: #BCBCBC;'>2</span> smiley       😃   
+#&gt; <span style='color: #BCBCBC;'>3</span> smile        😄   
+#&gt; <span style='color: #BCBCBC;'>4</span> laughing     😆   
+#&gt; <span style='color: #BCBCBC;'>5</span> raising_hand 🙋   </div><div class='input'><span class='fu'>emoji_find</span><span class='op'>(</span><span class='st'>"cat"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 12 × 2</span>
+#&gt;    name            emoji
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>           <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span> smiley_cat      😺   
+#&gt; <span style='color: #BCBCBC;'> 2</span> smile_cat       😸   
+#&gt; <span style='color: #BCBCBC;'> 3</span> joy_cat         😹   
+#&gt; <span style='color: #BCBCBC;'> 4</span> heart_eyes_cat  😻   
+#&gt; <span style='color: #BCBCBC;'> 5</span> smirk_cat       😼   
+#&gt; <span style='color: #BCBCBC;'> 6</span> kissing_cat     😽   
+#&gt; <span style='color: #BCBCBC;'> 7</span> scream_cat      🙀   
+#&gt; <span style='color: #BCBCBC;'> 8</span> crying_cat_face 😿   
+#&gt; <span style='color: #BCBCBC;'> 9</span> pouting_cat     😾   
+#&gt; <span style='color: #BCBCBC;'>10</span> cat             🐱   
+#&gt; <span style='color: #BCBCBC;'>11</span> cat2            🐈   
+#&gt; <span style='color: #BCBCBC;'>12</span> black_cat       🐈‍⬛   </div><div class='input'><span class='fu'>emoji_find</span><span class='op'>(</span><span class='st'>"family"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span style='color: #949494;'># A tibble: 26 × 2</span>
+#&gt;    name                       emoji
+#&gt;    <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>                      <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>
+#&gt; <span style='color: #BCBCBC;'> 1</span> family                     👪   
+#&gt; <span style='color: #BCBCBC;'> 2</span> family_man_woman_boy       👨‍👩‍👦   
+#&gt; <span style='color: #BCBCBC;'> 3</span> family_man_woman_girl      👨‍👩‍👧   
+#&gt; <span style='color: #BCBCBC;'> 4</span> family_man_woman_girl_boy  👨‍👩‍👧‍👦   
+#&gt; <span style='color: #BCBCBC;'> 5</span> family_man_woman_boy_boy   👨‍👩‍👦‍👦   
+#&gt; <span style='color: #BCBCBC;'> 6</span> family_man_woman_girl_girl 👨‍👩‍👧‍👧   
+#&gt; <span style='color: #BCBCBC;'> 7</span> family_man_man_boy         👨‍👨‍👦   
+#&gt; <span style='color: #BCBCBC;'> 8</span> family_man_man_girl        👨‍👨‍👧   
+#&gt; <span style='color: #BCBCBC;'> 9</span> family_man_man_girl_boy    👨‍👨‍👧‍👦   
+#&gt; <span style='color: #BCBCBC;'>10</span> family_man_man_boy_boy     👨‍👨‍👦‍👦   
+#&gt; <span style='color: #949494;'># … with 16 more rows</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
