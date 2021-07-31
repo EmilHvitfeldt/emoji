@@ -7,6 +7,9 @@ reference:
     - emoji_name
     - emoji_keyword
     - emoji_rx
+  - title: Emoji Retrival Functions
+    - emoji
+    - emoji_find
   - title: Emoji String Functions
     contents:
     - emoji_count
