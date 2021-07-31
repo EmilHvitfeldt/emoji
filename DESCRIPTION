@@ -29,6 +29,7 @@ Depends:
 URL: https://emilhvitfeldt.github.io/emoji/, https://github.com/EmilHvitfeldt/emoji
 BugReports: https://github.com/EmilHvitfeldt/emoji/issues
 Imports: 
+    tibble,
     stringr
 Suggests: 
     testthat (>= 3.0.0)
