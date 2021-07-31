@@ -8,6 +8,7 @@ reference:
     - emoji_keyword
     - emoji_rx
   - title: Emoji Retrival Functions
+    contents:
     - emoji
     - emoji_find
   - title: Emoji String Functions
