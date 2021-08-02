@@ -11,6 +11,7 @@ reference:
     contents:
     - emoji
     - emoji_find
+    - medal
   - title: Emoji String Functions
     contents:
     - emoji_count
