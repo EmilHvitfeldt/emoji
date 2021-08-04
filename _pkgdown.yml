@@ -12,6 +12,9 @@ reference:
     - emoji
     - emoji_find
     - medal
+  - title: Glue Interpolation
+    contents:
+    - emoji_glue
   - title: Emoji String Functions
     contents:
     - emoji_count
