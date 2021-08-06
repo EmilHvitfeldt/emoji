@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Insert medal emojis — medal • emoji</title>
+<title>Insert Flag Emojis — flag • emoji</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Insert medal emojis — medal" />
-<meta property="og:description" content="Insert medal emojis" />
+<meta property="og:title" content="Insert Flag Emojis — flag" />
+<meta property="og:description" content="Insert Flag Emojis" />
 
 
 
@@ -111,45 +111,46 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Insert medal emojis</h1>
-    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/medal.R'><code>R/medal.R</code></a></small>
-    <div class="hidden name"><code>medal.Rd</code></div>
+    <h1>Insert Flag Emojis</h1>
+    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/flag.R'><code>R/flag.R</code></a></small>
+    <div class="hidden name"><code>flag.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Insert medal emojis</p>
+    <p>Insert Flag Emojis</p>
     </div>
 
-    <pre class="usage"><span class='fu'>medal</span><span class='op'>(</span><span class='va'>place</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>flag</span><span class='op'>(</span><span class='va'>name</span>, return_key <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>place</th>
-      <td><p>Character denoting the place of the medal. See details for
-allowed names.</p></td>
+      <th>name</th>
+      <td><p>Character denoting the place of the flag. Set <code>return_key = TRUE</code>
+to get full list of allowed names.</p></td>
+    </tr>
+    <tr>
+      <th>return_key</th>
+      <td><p>Logical, set to TRUE to get full list of allowed names.</p></td>
     </tr>
     </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>Character vector of emojis.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>This function is vectorized. There are a 1st, 2nd and 3rd place medals and
-allowed names are listed below. Note that matches are made without case.</p>
-<ul>
-<li><p>1st place medal"1", "1st", or "gold"</p></li>
-<li><p>2nd place medal"2", "2nd", or "silver"</p></li>
-<li><p>3rd place medal"3", "3rd", or "bronze"</p></li>
-</ul>
-
-<p>#@return Character vector of emojis.</p>
+    <p>This function is vectorized. The input is being normalized before matching
+which will hopefully lead to lower friction and easier matching. Punctuation
+is being removed and case is not taken into consideration when matching.
+You can run <code>flag(return_key = TRUE)</code> to get full list of allowed names.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>medal</span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>3</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "🥇" "🥈" "🥉"</div><div class='input'>
-<span class='fu'>medal</span><span class='op'>(</span><span class='st'>"gold"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "🥇"</div><div class='input'><span class='fu'>medal</span><span class='op'>(</span><span class='st'>"Gold"</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; [1] "🥇"</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>flag</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Vietnam"</span>, <span class='st'>"Greenland"</span>, <span class='st'>"Estonia"</span>, <span class='st'>"Denmark"</span>, <span class='st'>"united states"</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "🇻🇳" "🇬🇱" "🇪🇪" "🇩🇰" "🇺🇸"</div><div class='input'>
+<span class='fu'>flag</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"US Virgin Islands"</span>, <span class='st'>"U.S. Virgin Islands"</span>, <span class='st'>"u.s. virgin islands"</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "🇻🇮" "🇻🇮" "🇻🇮"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
