@@ -13,6 +13,7 @@
 ##'  \item{3rd place medal}{"3", "3rd", or "bronze"}
 ##' }
 #'
+#'#@return Character vector of emojis.
 #' @export
 #' @examples
 #' medal(1:3)
