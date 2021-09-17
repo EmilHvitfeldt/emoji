@@ -7,8 +7,8 @@
 arrow(direction)
 }
 \arguments{
-\item{direction}{Character denoting the direction of the arrow should be one of
-“up”, “up-right”, “right”, “down-right”, “down”, “down-left”, “left”,
+\item{direction}{Character denoting the direction of the arrow. Should be one
+of “up”, “up-right”, “right”, “down-right”, “down”, “down-left”, “left”,
 “up-left”, “up-down”, or “left-right”.}
 }
 \description{
