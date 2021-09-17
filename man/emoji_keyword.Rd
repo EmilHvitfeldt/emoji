@@ -5,7 +5,7 @@
 \alias{emoji_keyword}
 \title{Emoji Keywords}
 \format{
-named list of characters with 6637 elements
+named list of characters with 6825 elements
 }
 \source{
 \href{https://www.unicode.org/emoji/charts-13.1/full-emoji-list.html}{Unicode® Full Emoji Charts v13.1}
