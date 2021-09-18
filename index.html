@@ -32,7 +32,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">emoji</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
       </span>
     </div>
 
@@ -95,7 +95,7 @@
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://emilhvitfeldt.github.io/emoji/">emoji</a></span><span class="op">)</span>
 
 <span class="va">emojis</span>
-<span class="co">#&gt; # A tibble: 4,590 x 19</span>
+<span class="co">#&gt; # A tibble: 4,702 × 19</span>
 <span class="co">#&gt;    emoji name  group subgroup version points nrunes runes qualified vendor_apple</span>
 <span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;list&gt;  &lt;int&gt; &lt;chr&gt; &lt;chr&gt;     &lt;lgl&gt;       </span>
 <span class="co">#&gt;  1 😀    grin… Smil… face-sm… 1.0     &lt;int …      1 1F600 fully-qu… TRUE        </span>
@@ -108,24 +108,35 @@
 <span class="co">#&gt;  8 😂    face… Smil… face-sm… 0.6     &lt;int …      1 1F602 fully-qu… TRUE        </span>
 <span class="co">#&gt;  9 🙂    slig… Smil… face-sm… 1.0     &lt;int …      1 1F642 fully-qu… TRUE        </span>
 <span class="co">#&gt; 10 🙃    upsi… Smil… face-sm… 1.0     &lt;int …      1 1F643 fully-qu… TRUE        </span>
-<span class="co">#&gt; # … with 4,580 more rows, and 9 more variables: vendor_google &lt;lgl&gt;,</span>
+<span class="co">#&gt; # … with 4,692 more rows, and 9 more variables: vendor_google &lt;lgl&gt;,</span>
 <span class="co">#&gt; #   vendor_twitter &lt;lgl&gt;, vendor_one &lt;lgl&gt;, vendor_facebook &lt;lgl&gt;,</span>
 <span class="co">#&gt; #   vendor_messenger &lt;lgl&gt;, vendor_samsung &lt;lgl&gt;, vendor_windows &lt;lgl&gt;,</span>
 <span class="co">#&gt; #   keywords &lt;list&gt;, aliases &lt;list&gt;</span></code></pre></div>
 <p>the <code>emoji_name</code> is a vector of emojis with descriptive names</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">emoji_name</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span>
-<span class="co">#&gt;              grinning                smiley                 smile </span>
-<span class="co">#&gt;                  "😀"                  "😃"                  "😄" </span>
-<span class="co">#&gt;                  grin              laughing           sweat_smile </span>
-<span class="co">#&gt;                  "😁"                  "😆"                  "😅" </span>
-<span class="co">#&gt;                  rofl                   joy slightly_smiling_face </span>
-<span class="co">#&gt;                  "🤣"                  "😂"                  "🙂" </span>
-<span class="co">#&gt;      upside_down_face </span>
-<span class="co">#&gt;                  "🙃"</span></code></pre></div>
+<span class="co">#&gt;                        grinning                   grinning_face </span>
+<span class="co">#&gt;                            "😀"                            "😀" </span>
+<span class="co">#&gt;                          smiley     grinning_face_with_big_eyes </span>
+<span class="co">#&gt;                            "😃"                            "😃" </span>
+<span class="co">#&gt;                           smile grinning_face_with_smiling_eyes </span>
+<span class="co">#&gt;                            "😄"                            "😄" </span>
+<span class="co">#&gt;                            grin  beaming_face_with_smiling_eyes </span>
+<span class="co">#&gt;                            "😁"                            "😁" </span>
+<span class="co">#&gt;                        laughing                       satisfied </span>
+<span class="co">#&gt;                            "😆"                            "😆"</span></code></pre></div>
 <p>Each of the emojis have zero or more keywords associated with them.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">emoji_keyword</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">150</span><span class="op">:</span><span class="fl">155</span><span class="op">)</span><span class="op">]</span>
+<span class="co">#&gt; $Aries</span>
+<span class="co">#&gt; [1] "ram"   "aries"</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $army</span>
+<span class="co">#&gt; [1] "military_helmet"</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $arrivals</span>
+<span class="co">#&gt; [1] "flight_arrival"</span>
+<span class="co">#&gt; </span>
 <span class="co">#&gt; $arriving</span>
 <span class="co">#&gt; [1] "flight_arrival"</span>
 <span class="co">#&gt; </span>
@@ -150,38 +161,29 @@
 <span class="co">#&gt; [35] "arrow_down_small"          "arrow_double_down"        </span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt; $art</span>
-<span class="co">#&gt; [1] "performing_arts" "art"            </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; $`articulated lorry`</span>
-<span class="co">#&gt; [1] "articulated_lorry"</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; $artist</span>
-<span class="co">#&gt; [1] "artist"       "man_artist"   "woman_artist"</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; $`artist palette`</span>
-<span class="co">#&gt; [1] "art"</span></code></pre></div>
+<span class="co">#&gt; [1] "performing_arts" "art"</span></code></pre></div>
 <p>when can use <code>emoji_keyword</code> together with <code>emoji_name</code> to show then emojis for each keyword.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/lapply.html">lapply</a></span><span class="op">(</span><span class="va">emoji_keyword</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">150</span><span class="op">:</span><span class="fl">155</span><span class="op">)</span><span class="op">]</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html">unname</a></span><span class="op">(</span><span class="va">emoji_name</span><span class="op">[</span><span class="va">x</span><span class="op">]</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; $Aries</span>
+<span class="co">#&gt; [1] "🐏" "♈"</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $army</span>
+<span class="co">#&gt; [1] "🪖"</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; $arrivals</span>
+<span class="co">#&gt; [1] "🛬"</span>
+<span class="co">#&gt; </span>
 <span class="co">#&gt; $arriving</span>
 <span class="co">#&gt; [1] "🛬"</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt; $arrow</span>
-<span class="co">#&gt;  [1] "💘" "📲" "📩" "🏹" "⬆"  "↗"  "➡"  "↘"  "⬇"  "↙"  "⬅"  "↖"  "↕"  "↩"  "↪" </span>
-<span class="co">#&gt; [16] "⤴"  "⤵"  "🔃" "🔄" "🔙" "🔚" "🔛" "🔜" "🔝" "🔀" "🔁" "🔂" "▶"  "⏩" "◀" </span>
-<span class="co">#&gt; [31] "⏪" "⏮"  "🔼" "⏫" "🔽" "⏬"</span>
+<span class="co">#&gt;  [1] "💘" "📲" "📩" "🏹" "⬆️"  "↗️"  "➡️"  "↘️"  "⬇️"  "↙️"  "⬅️"  "↖️"  "↕️"  "↩️"  "↪️" </span>
+<span class="co">#&gt; [16] "⤴️"  "⤵️"  "🔃" "🔄" "🔙" "🔚" "🔛" "🔜" "🔝" "🔀" "🔁" "🔂" "▶️"  "⏩" "◀️" </span>
+<span class="co">#&gt; [31] "⏪" "⏮️"  "🔼" "⏫" "🔽" "⏬"</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt; $art</span>
-<span class="co">#&gt; [1] "🎭" "🎨"</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; $`articulated lorry`</span>
-<span class="co">#&gt; [1] "🚛"</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; $artist</span>
-<span class="co">#&gt; [1] "🧑‍🎨" "👨‍🎨" "👩‍🎨"</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; $`artist palette`</span>
-<span class="co">#&gt; [1] "🎨"</span></code></pre></div>
+<span class="co">#&gt; [1] "🎭" "🎨"</span></code></pre></div>
 </div>
 <div id="code-of-conduct" class="section level2">
 <h2 class="hasAnchor">
