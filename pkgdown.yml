@@ -2,7 +2,7 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-09-18T16:38Z
+last_built: 2021-09-18T16:39Z
 urls:
   reference: https://emilhvitfeldt.github.io/emoji/reference
   article: https://emilhvitfeldt.github.io/emoji/articles
