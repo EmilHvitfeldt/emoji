@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Emoji Keywords — emoji_keyword • emoji</title>
+<title>Insert Arrow emojis — arrow • emoji</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="Emoji Keywords — emoji_keyword" />
-<meta property="og:description" content="This list contains information about which emojis are contained in which
-keywords." />
+<meta property="og:title" content="Insert Arrow emojis — arrow" />
+<meta property="og:description" content="Insert Arrow emojis" />
 
 
 
@@ -112,33 +111,38 @@ keywords." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Emoji Keywords</h1>
-    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>emoji_keyword.Rd</code></div>
+    <h1>Insert Arrow emojis</h1>
+    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/arrow.R'><code>R/arrow.R</code></a></small>
+    <div class="hidden name"><code>arrow.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This list contains information about which emojis are contained in which
-keywords.</p>
+    <p>Insert Arrow emojis</p>
     </div>
 
-    <pre class="usage"><span class='va'>emoji_keyword</span></pre>
+    <pre class="usage"><span class='fu'>arrow</span><span class='op'>(</span><span class='va'>direction</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>direction</th>
+      <td><p>Character denoting the direction of the arrow. Should be one
+of “up”, “up-right”, “right”, “down-right”, “down”, “down-left”, “left”,
+“up-left”, “up-down”, or “left-right”.</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>named list of characters with 6825 elements</p>
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <p>This function is vectorized. Wrong input of <code>direction</code> will result in <code>NA</code>s.</p>
+<p>#@return Character vector of emojis.</p>
 
-    <p><a href='https://www.unicode.org/emoji/charts-13.1/full-emoji-list.html'>Unicode® Full Emoji Charts v13.1</a></p>
-<p><a href='https://www.unicode.org/emoji/charts-13.1/emoji-list.html'>Unicode® Emoji Charts v13.1</a></p>
-<p><a href='https://www.unicode.org/emoji/charts/emoji-ordering.txt'>Unicode® Emoji Ordering, v13.1</a></p>
-<p><a href='https://github.com/github/gemoji'>https://github.com/github/gemoji</a></p>
-<p><a href='https://github.com/muan/emojilib'>https://github.com/muan/emojilib</a></p>
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p>emojis emoji_name</p></div>
-
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>arrow</span><span class='op'>(</span><span class='st'>"up-down"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "↕️"</div><div class='input'>
+<span class='fu'>arrow</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"up"</span>, <span class='st'>"up"</span>, <span class='st'>"down"</span>, <span class='st'>"down"</span>, <span class='st'>"left"</span>, <span class='st'>"right"</span>, <span class='st'>"left"</span>, <span class='st'>"right"</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "⬆️" "⬆️" "⬇️" "⬇️" "⬅️" "➡️" "⬅️" "➡️"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

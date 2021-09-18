@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Emoji Keywords — emoji_keyword • emoji</title>
+<title>Keycap emoji sequence — keycap • emoji</title>
 
 
 <!-- jquery -->
@@ -39,9 +39,8 @@
 
 
 
-<meta property="og:title" content="Emoji Keywords — emoji_keyword" />
-<meta property="og:description" content="This list contains information about which emojis are contained in which
-keywords." />
+<meta property="og:title" content="Keycap emoji sequence — keycap" />
+<meta property="og:description" content="Keycap emoji sequence" />
 
 
 
@@ -112,33 +111,39 @@ keywords." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Emoji Keywords</h1>
-    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>emoji_keyword.Rd</code></div>
+    <h1>Keycap emoji sequence</h1>
+    <small class="dont-index">Source: <a href='https://github.com/EmilHvitfeldt/emoji/blob/master/R/keycap.R'><code>R/keycap.R</code></a></small>
+    <div class="hidden name"><code>keycap.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This list contains information about which emojis are contained in which
-keywords.</p>
+    <p>Keycap emoji sequence</p>
     </div>
 
-    <pre class="usage"><span class='va'>emoji_keyword</span></pre>
+    <pre class="usage"><span class='fu'>keycap</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>character, must be a number between 0 and 10, "#", or "*".</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>named list of characters with 6825 elements</p>
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <p>a keycap version of <code>x</code></p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p><a href='https://www.unicode.org/emoji/charts-13.1/full-emoji-list.html'>Unicode® Full Emoji Charts v13.1</a></p>
-<p><a href='https://www.unicode.org/emoji/charts-13.1/emoji-list.html'>Unicode® Emoji Charts v13.1</a></p>
-<p><a href='https://www.unicode.org/emoji/charts/emoji-ordering.txt'>Unicode® Emoji Ordering, v13.1</a></p>
-<p><a href='https://github.com/github/gemoji'>https://github.com/github/gemoji</a></p>
-<p><a href='https://github.com/muan/emojilib'>https://github.com/muan/emojilib</a></p>
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+    <p>This function is vectorized.</p>
 
-    <div class='dont-index'><p>emojis emoji_name</p></div>
-
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>keycap</span><span class='op'>(</span><span class='fl'>6</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "6️⃣"</div><div class='input'><span class='fu'>keycap</span><span class='op'>(</span><span class='st'>'#'</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; [1] "#️⃣"</div><div class='input'>
+<span class='fu'>keycap</span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;  [1] "1️⃣"  "2️⃣"  "3️⃣"  "4️⃣"  "5️⃣"  "6️⃣"  "7️⃣"  "8️⃣"  "9️⃣"  "🔟"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
