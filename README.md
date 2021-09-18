@@ -36,7 +36,7 @@ contains almost all the information contained in this package.
 library(emoji)
 
 emojis
-#> # A tibble: 4,590 x 19
+#> # A tibble: 4,702 × 19
 #>    emoji name  group subgroup version points nrunes runes qualified vendor_apple
 #>    <chr> <chr> <chr> <chr>    <chr>   <list>  <int> <chr> <chr>     <lgl>       
 #>  1 😀    grin… Smil… face-sm… 1.0     <int …      1 1F600 fully-qu… TRUE        
@@ -49,7 +49,7 @@ emojis
 #>  8 😂    face… Smil… face-sm… 0.6     <int …      1 1F602 fully-qu… TRUE        
 #>  9 🙂    slig… Smil… face-sm… 1.0     <int …      1 1F642 fully-qu… TRUE        
 #> 10 🙃    upsi… Smil… face-sm… 1.0     <int …      1 1F643 fully-qu… TRUE        
-#> # … with 4,580 more rows, and 9 more variables: vendor_google <lgl>,
+#> # … with 4,692 more rows, and 9 more variables: vendor_google <lgl>,
 #> #   vendor_twitter <lgl>, vendor_one <lgl>, vendor_facebook <lgl>,
 #> #   vendor_messenger <lgl>, vendor_samsung <lgl>, vendor_windows <lgl>,
 #> #   keywords <list>, aliases <list>
@@ -59,20 +59,31 @@ the `emoji_name` is a vector of emojis with descriptive names
 
 ``` r
 emoji_name[1:10]
-#>              grinning                smiley                 smile 
-#>                  "😀"                  "😃"                  "😄" 
-#>                  grin              laughing           sweat_smile 
-#>                  "😁"                  "😆"                  "😅" 
-#>                  rofl                   joy slightly_smiling_face 
-#>                  "🤣"                  "😂"                  "🙂" 
-#>      upside_down_face 
-#>                  "🙃"
+#>                        grinning                   grinning_face 
+#>                            "😀"                            "😀" 
+#>                          smiley     grinning_face_with_big_eyes 
+#>                            "😃"                            "😃" 
+#>                           smile grinning_face_with_smiling_eyes 
+#>                            "😄"                            "😄" 
+#>                            grin  beaming_face_with_smiling_eyes 
+#>                            "😁"                            "😁" 
+#>                        laughing                       satisfied 
+#>                            "😆"                            "😆"
 ```
 
 Each of the emojis have zero or more keywords associated with them.
 
 ``` r
 emoji_keyword[c(150:155)]
+#> $Aries
+#> [1] "ram"   "aries"
+#> 
+#> $army
+#> [1] "military_helmet"
+#> 
+#> $arrivals
+#> [1] "flight_arrival"
+#> 
 #> $arriving
 #> [1] "flight_arrival"
 #> 
@@ -97,16 +108,7 @@ emoji_keyword[c(150:155)]
 #> [35] "arrow_down_small"          "arrow_double_down"        
 #> 
 #> $art
-#> [1] "performing_arts" "art"            
-#> 
-#> $`articulated lorry`
-#> [1] "articulated_lorry"
-#> 
-#> $artist
-#> [1] "artist"       "man_artist"   "woman_artist"
-#> 
-#> $`artist palette`
-#> [1] "art"
+#> [1] "performing_arts" "art"
 ```
 
 when can use `emoji_keyword` together with `emoji_name` to show then
@@ -114,25 +116,25 @@ emojis for each keyword.
 
 ``` r
 lapply(emoji_keyword[c(150:155)], function(x) unname(emoji_name[x]))
+#> $Aries
+#> [1] "🐏" "♈"
+#> 
+#> $army
+#> [1] "🪖"
+#> 
+#> $arrivals
+#> [1] "🛬"
+#> 
 #> $arriving
 #> [1] "🛬"
 #> 
 #> $arrow
-#>  [1] "💘" "📲" "📩" "🏹" "⬆"  "↗"  "➡"  "↘"  "⬇"  "↙"  "⬅"  "↖"  "↕"  "↩"  "↪" 
-#> [16] "⤴"  "⤵"  "🔃" "🔄" "🔙" "🔚" "🔛" "🔜" "🔝" "🔀" "🔁" "🔂" "▶"  "⏩" "◀" 
-#> [31] "⏪" "⏮"  "🔼" "⏫" "🔽" "⏬"
+#>  [1] "💘" "📲" "📩" "🏹" "⬆️"  "↗️"  "➡️"  "↘️"  "⬇️"  "↙️"  "⬅️"  "↖️"  "↕️"  "↩️"  "↪️" 
+#> [16] "⤴️"  "⤵️"  "🔃" "🔄" "🔙" "🔚" "🔛" "🔜" "🔝" "🔀" "🔁" "🔂" "▶️"  "⏩" "◀️" 
+#> [31] "⏪" "⏮️"  "🔼" "⏫" "🔽" "⏬"
 #> 
 #> $art
 #> [1] "🎭" "🎨"
-#> 
-#> $`articulated lorry`
-#> [1] "🚛"
-#> 
-#> $artist
-#> [1] "🧑‍🎨" "👨‍🎨" "👩‍🎨"
-#> 
-#> $`artist palette`
-#> [1] "🎨"
 ```
 
 ## Code of Conduct

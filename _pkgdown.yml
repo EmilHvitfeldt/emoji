@@ -12,8 +12,13 @@ reference:
     - emoji
     - emoji_find
     - emoji_fix
+    - arrow
+    - clock
     - flag
+    - keycap
     - medal
+    - moon
+    - shape
   - title: Glue Interpolation
     contents:
     - emoji_glue
