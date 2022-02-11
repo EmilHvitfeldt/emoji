@@ -38,7 +38,7 @@
 #'   \item{keywords}{vector of aliases}
 #' }
 #'
-#' @seealso emoji_name emoji_keyboard
+#' @seealso emoji_name emoji_keyword
 "emojis"
 
 #' Emoji Names
@@ -59,7 +59,7 @@
 #'
 #' @format named character vector with `r length(emoji_name)` elements
 #'
-#' @seealso emojis emoji_keyboard
+#' @seealso emojis emoji_keyword
 "emoji_name"
 
 #' Emoji Keywords
