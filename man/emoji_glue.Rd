@@ -7,13 +7,13 @@
 emoji_glue(..., .envir = parent.frame())
 }
 \arguments{
-\item{...}{[\code{expressions}]\cr Unnamed arguments are taken to be expressions
+\item{...}{[\code{expressions}]\cr Unnamed arguments are taken to be expression
 string(s) to format. Multiple inputs are concatenated together before formatting.
 Named arguments are taken to be temporary variables available for substitution.}
 
 \item{.envir}{[\code{environment}: \code{parent.frame()}]\cr Environment to evaluate each expression in. Expressions are
 evaluated from left to right. If \code{.x} is an environment, the expressions are
-evaluated in that environment and \code{.envir} is ignored. If \code{NULL} is passed it is equivalent to \code{\link[=emptyenv]{emptyenv()}}.}
+evaluated in that environment and \code{.envir} is ignored. If \code{NULL} is passed, it is equivalent to \code{\link[=emptyenv]{emptyenv()}}.}
 }
 \value{
 a \code{glue::glue()} string.

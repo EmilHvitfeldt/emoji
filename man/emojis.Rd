@@ -55,6 +55,6 @@ Emoji_Component
 }
 }
 \seealso{
-emoji_name emoji_keyboard
+emoji_name emoji_keyword
 }
 \keyword{datasets}

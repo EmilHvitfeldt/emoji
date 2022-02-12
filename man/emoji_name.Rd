@@ -32,6 +32,6 @@ associated with them. Such as "grinning" and "grinning_face" leading to the
 same emoji.
 }
 \seealso{
-emojis emoji_keyboard
+emojis emoji_keyword
 }
 \keyword{datasets}
