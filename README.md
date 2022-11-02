@@ -5,7 +5,9 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/EmilHvitfeldt/emoji/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/emoji/actions)
+[![R-CMD-check](https://github.com/EmilHvitfeldt/emoji/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EmilHvitfeldt/emoji/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/EmilHvitfeldt/emoji/branch/main/graph/badge.svg)](https://app.codecov.io/gh/EmilHvitfeldt/emoji?branch=main)
 <!-- badges: end -->
 
 The goal of emoji is to provide up to date information inn the form of
@@ -37,22 +39,23 @@ library(emoji)
 
 emojis
 #> # A tibble: 4,702 × 19
-#>    emoji name  group subgroup version points nrunes runes qualified vendor_apple
-#>    <chr> <chr> <chr> <chr>    <chr>   <list>  <int> <chr> <chr>     <lgl>       
-#>  1 😀    grin… Smil… face-sm… 1.0     <int …      1 1F600 fully-qu… TRUE        
-#>  2 😃    grin… Smil… face-sm… 0.6     <int …      1 1F603 fully-qu… TRUE        
-#>  3 😄    grin… Smil… face-sm… 0.6     <int …      1 1F604 fully-qu… TRUE        
-#>  4 😁    beam… Smil… face-sm… 0.6     <int …      1 1F601 fully-qu… TRUE        
-#>  5 😆    grin… Smil… face-sm… 0.6     <int …      1 1F606 fully-qu… TRUE        
-#>  6 😅    grin… Smil… face-sm… 0.6     <int …      1 1F605 fully-qu… TRUE        
-#>  7 🤣    roll… Smil… face-sm… 3.0     <int …      1 1F923 fully-qu… TRUE        
-#>  8 😂    face… Smil… face-sm… 0.6     <int …      1 1F602 fully-qu… TRUE        
-#>  9 🙂    slig… Smil… face-sm… 1.0     <int …      1 1F642 fully-qu… TRUE        
-#> 10 🙃    upsi… Smil… face-sm… 1.0     <int …      1 1F643 fully-qu… TRUE        
-#> # … with 4,692 more rows, and 9 more variables: vendor_google <lgl>,
-#> #   vendor_twitter <lgl>, vendor_one <lgl>, vendor_facebook <lgl>,
-#> #   vendor_messenger <lgl>, vendor_samsung <lgl>, vendor_windows <lgl>,
-#> #   keywords <list>, aliases <list>
+#>    emoji name  group subgr…¹ version points nrunes runes quali…² vendo…³ vendo…⁴
+#>    <chr> <chr> <chr> <chr>   <chr>   <list>  <int> <chr> <chr>   <lgl>   <lgl>  
+#>  1 😀    grin… Smil… face-s… 1.0     <int>       1 1F600 fully-… TRUE    TRUE   
+#>  2 😃    grin… Smil… face-s… 0.6     <int>       1 1F603 fully-… TRUE    TRUE   
+#>  3 😄    grin… Smil… face-s… 0.6     <int>       1 1F604 fully-… TRUE    TRUE   
+#>  4 😁    beam… Smil… face-s… 0.6     <int>       1 1F601 fully-… TRUE    TRUE   
+#>  5 😆    grin… Smil… face-s… 0.6     <int>       1 1F606 fully-… TRUE    TRUE   
+#>  6 😅    grin… Smil… face-s… 0.6     <int>       1 1F605 fully-… TRUE    TRUE   
+#>  7 🤣    roll… Smil… face-s… 3.0     <int>       1 1F923 fully-… TRUE    TRUE   
+#>  8 😂    face… Smil… face-s… 0.6     <int>       1 1F602 fully-… TRUE    TRUE   
+#>  9 🙂    slig… Smil… face-s… 1.0     <int>       1 1F642 fully-… TRUE    TRUE   
+#> 10 🙃    upsi… Smil… face-s… 1.0     <int>       1 1F643 fully-… TRUE    TRUE   
+#> # … with 4,692 more rows, 8 more variables: vendor_twitter <lgl>,
+#> #   vendor_one <lgl>, vendor_facebook <lgl>, vendor_messenger <lgl>,
+#> #   vendor_samsung <lgl>, vendor_windows <lgl>, keywords <list>,
+#> #   aliases <list>, and abbreviated variable names ¹​subgroup, ²​qualified,
+#> #   ³​vendor_apple, ⁴​vendor_google
 ```
 
 the `emoji_name` is a vector of emojis with descriptive names
