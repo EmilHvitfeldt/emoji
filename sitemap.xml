@@ -61,6 +61,15 @@
     <loc>/reference/emoji_match.html</loc>
   </url>
   <url>
+    <loc>/reference/emoji_modifier_extract.html</loc>
+  </url>
+  <url>
+    <loc>/reference/emoji_modifier_remove.html</loc>
+  </url>
+  <url>
+    <loc>/reference/emoji_modifiers.html</loc>
+  </url>
+  <url>
     <loc>/reference/emoji_name.html</loc>
   </url>
   <url>
