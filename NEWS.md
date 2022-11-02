@@ -1,5 +1,7 @@
 # emoji (development version)
 
+* Updated data to include Emoji v15.0.
+
 # emoji 0.2.0
 
 * Updated data to include Emoji v14.0.

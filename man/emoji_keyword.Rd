@@ -5,14 +5,14 @@
 \alias{emoji_keyword}
 \title{Emoji Keywords}
 \format{
-named list of characters with 6825 elements
+named list of characters with 6878 elements
 }
 \source{
-\href{https://www.unicode.org/emoji/charts-13.1/full-emoji-list.html}{Unicode® Full Emoji Charts v13.1}
+\href{https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html}{Unicode® Full Emoji Charts v15.0}
 
-\href{https://www.unicode.org/emoji/charts-13.1/emoji-list.html}{Unicode® Emoji Charts v13.1}
+\href{https://www.unicode.org/emoji/charts-15.0/emoji-list.html}{Unicode® Emoji Charts v15.0}
 
-\href{https://www.unicode.org/emoji/charts/emoji-ordering.txt}{Unicode® Emoji Ordering, v13.1}
+\href{https://www.unicode.org/emoji/charts/emoji-ordering.txt}{Unicode® Emoji Ordering, v15.0}
 
 \url{https://github.com/github/gemoji}
 

@@ -14,11 +14,11 @@ download_emoji <- function() {
     dir.create("data-raw/emoji_current")
   }
   download.file(
-    url = "https://www.unicode.org/emoji/charts-14.0/full-emoji-list.html",
+    url = "https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html",
     destfile = "data-raw/emoji_current/full-emoji-list.html"
   )
   download.file(
-    url = "https://www.unicode.org/emoji/charts-14.0/emoji-list.html",
+    url = "https://www.unicode.org/emoji/charts-15.0/emoji-list.html",
     destfile = "data-raw/emoji_current/emoji-list.html"
   )
 }
