@@ -1,17 +1,28 @@
-url: https://emilhvitfeldt.github.io/emoji
+url: ~
+template:
+  bootstrap: 5
 
 reference:
   - title: Data Sets
+    desc: >
+      These data sets contain all the emojis and their related metadata you
+      might need.
     contents:
     - emojis
     - emoji_name
     - emoji_keyword
     - emoji_rx
   - title: Emoji Retrival Functions
+    desc: >
+      Functions to return/search/fix remojis based on their names.
     contents:
     - emoji
     - emoji_find
     - emoji_fix
+  - title: Novelty Emoji Functions
+    desc: >
+      Fun set of functions to return emojis based on a group.
+    contents:
     - emoji_p
     - arrow
     - clock
@@ -21,9 +32,13 @@ reference:
     - moon
     - shape
   - title: Glue Interpolation
+    desc: >
+      Combine the power of glue::glue and emoji().
     contents:
     - emoji_glue
   - title: Emoji String Functions
+    desc: >
+      stringr functions but for emojis.
     contents:
     - emoji_count
     - emoji_detect
