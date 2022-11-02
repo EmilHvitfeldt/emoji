@@ -77,3 +77,25 @@
 #'
 #' @seealso emojis emoji_name
 "emoji_keyword"
+
+#' Emoji Modifiers
+#'
+#' This data set contains all the emojis with modifiers, their unmodified
+#' version as well as a list of the the modifiers.
+#'
+#' @source [Unicode® Full Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html)
+#' @source [Unicode® Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/emoji-list.html)
+#' @source [Unicode® Emoji Ordering, v15.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
+#' @source \url{https://github.com/github/gemoji}
+#' @source \url{https://github.com/muan/emojilib}
+#'
+#' @format tibble with `r ncol(emoji_modifiers)` columns and
+#' `nrow(emoji_modifiers)` rows
+#' \describe{
+#'   \item{emoji_modifiers}{character representation of the emoji with modifiers}
+#'   \item{emoji}{character representation of the emoji without modifiers}
+#'   \item{modifiers}{list of modifiers}
+#' }
+#'
+#' @seealso emojis emoji_name
+"emoji_modifiers"

@@ -292,3 +292,19 @@ kw <- bind_rows(kw, tibble(keywords = aliases, name = as.list(aliases)))
 
 emoji_keyword <- set_names(kw$name, kw$keywords)
 use_data(emoji_keyword, overwrite = TRUE)
+
+emoji_modifiers <- emojis %>%
+  select(emoji, name) %>%
+  filter(str_detect(name, ":")) %>%
+  mutate(new_name = str_remove(name, ":.*")) %>%
+  left_join(
+    transmute(emojis, new_emoji = emoji, new_name = name),
+    by = "new_name"
+  ) %>%
+  mutate(
+    modifiers = str_remove(name, "^.*: "),
+    modifiers = str_split(modifiers, ", ")
+  ) %>%
+  select(emoji_modifiers = emoji, emoji = new_emoji, modifiers) %>%
+  drop_na()
+use_data(emoji_modifiers, overwrite = TRUE)

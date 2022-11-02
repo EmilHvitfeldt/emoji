@@ -12,6 +12,7 @@ reference:
     - emoji_name
     - emoji_keyword
     - emoji_rx
+    - emoji_modifiers
   - title: Emoji Retrival Functions
     desc: >
       Functions to return/search/fix remojis based on their names.
