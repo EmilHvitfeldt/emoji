@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/404.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/authors.html</loc>
+  </url>
+  <url>
     <loc>https://emilhvitfeldt.github.io/emoji/index.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/news/index.html</loc>
   </url>
   <url>
     <loc>https://emilhvitfeldt.github.io/emoji/reference/arrow.html</loc>
@@ -62,6 +80,9 @@
   </url>
   <url>
     <loc>https://emilhvitfeldt.github.io/emoji/reference/flag.html</loc>
+  </url>
+  <url>
+    <loc>https://emilhvitfeldt.github.io/emoji/reference/index.html</loc>
   </url>
   <url>
     <loc>https://emilhvitfeldt.github.io/emoji/reference/keycap.html</loc>
