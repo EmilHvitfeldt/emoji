@@ -12,6 +12,7 @@ reference:
     - emoji
     - emoji_find
     - emoji_fix
+    - emoji_p
     - arrow
     - clock
     - flag
