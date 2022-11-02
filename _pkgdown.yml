@@ -34,6 +34,7 @@ reference:
     - medal
     - moon
     - shape
+    - zoo
   - title: Glue Interpolation
     desc: >
       Combine the power of glue::glue and emoji().
