@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# emoji <a href='https://emilhvitfeldt.github.io/emoji'><img src='man/figures/logo.png' align="right" height="139" /></a>
+# emoji <a href='https://emilhvitfeldt.github.io/emoji/'><img src='man/figures/logo.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
