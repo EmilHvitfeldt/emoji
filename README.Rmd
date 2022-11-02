@@ -17,6 +17,9 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/EmilHvitfeldt/emoji/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EmilHvitfeldt/emoji/actions/workflows/R-CMD-check.yaml)
+[![CRAN status](https://www.r-pkg.org/badges/version/emoji)](https://CRAN.R-project.org/package=emoji)
+[![Downloads](https://cranlogs.r-pkg.org/badges/emoji)](https://CRAN.R-project.org/package=emoji)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Codecov test coverage](https://codecov.io/gh/EmilHvitfeldt/emoji/branch/main/graph/badge.svg)](https://app.codecov.io/gh/EmilHvitfeldt/emoji?branch=main)
 <!-- badges: end -->
 
