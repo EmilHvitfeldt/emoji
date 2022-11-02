@@ -1,4 +1,4 @@
-# emoji (development version)
+# emoji 15.0
 
 * Package version will now reflect the emoji version set by Unicode.
 * Updated data to include Emoji v15.0.
