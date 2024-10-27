@@ -2,37 +2,30 @@ Package: emoji
 Title: Data and Function to Work with Emojis
 Version: 15.0.0.9000
 Authors@R: c(
-    person(given = "Emil",
-           family = "Hvitfeldt",
-           role = c("aut", "cre"),
-           email = "emilhhvitfeldt@gmail.com",
+    person("Emil", "Hvitfeldt", , "emilhhvitfeldt@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0679-1945")),
-    person(given = "Hadley",
-           family = "Wickham",
-           email = "hadley@rstudio.com", 
-           role = "ctb", 
+    person("Hadley", "Wickham", , "hadley@rstudio.com", role = "ctb",
            comment = "Data parsing code from hadley/emo"),
-    person(given = "Romain",
-           family = "François",
-           role = "ctb", 
+    person("Romain", "François", role = "ctb",
            comment = "Data parsing code from hadley/emo")
-    )
-Description: Contains data about emojis with relevant metadata, and functions
-    to work with emojis when they are in strings.
+  )
+Description: Contains data about emojis with relevant metadata, and
+    functions to work with emojis when they are in strings.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+URL: https://emilhvitfeldt.github.io/emoji/,
+    https://github.com/EmilHvitfeldt/emoji
+BugReports: https://github.com/EmilHvitfeldt/emoji/issues
 Depends: 
     R (>= 2.10)
-URL: https://emilhvitfeldt.github.io/emoji/, https://github.com/EmilHvitfeldt/emoji
-BugReports: https://github.com/EmilHvitfeldt/emoji/issues
 Imports: 
-    tibble,
+    glue,
     stringr,
-    glue
+    tibble
 Suggests: 
     covr,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

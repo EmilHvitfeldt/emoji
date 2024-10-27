@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 [![Downloads](https://cranlogs.r-pkg.org/badges/emoji)](https://CRAN.R-project.org/package=emoji)
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Codecov test coverage](https://codecov.io/gh/EmilHvitfeldt/emoji/branch/main/graph/badge.svg)](https://app.codecov.io/gh/EmilHvitfeldt/emoji?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/EmilHvitfeldt/emoji/graph/badge.svg)](https://app.codecov.io/gh/EmilHvitfeldt/emoji)
 <!-- badges: end -->
 
 The goal of emoji is to provide up to date information inn the form of data sets on emojis and their use.
