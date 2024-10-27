@@ -12,7 +12,7 @@ emoji_which(string, negate = FALSE)
 \arguments{
 \item{string}{input vector}
 
-\item{negate}{If \code{TRUE}, return non-matching elements.}
+\item{negate}{If \code{TRUE}, inverts the resulting boolean vector.}
 }
 \value{
 A character vector

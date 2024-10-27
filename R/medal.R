@@ -7,13 +7,11 @@
 #' This function is vectorized. There are a 1st, 2nd and 3rd place medals and
 #' allowed names are listed below. Note that matches are made without case.
 #'
-#' \itemize{
-##'  \item{1st place medal}{"1", "1st", or "gold"}
-##'  \item{2nd place medal}{"2", "2nd", or "silver"}
-##'  \item{3rd place medal}{"3", "3rd", or "bronze"}
-##' }
+#' * 1st place medal: "1", "1st", or "gold"
+#' * 2nd place medal: "2", "2nd", or "silver"
+#' * 3rd place medal: "3", "3rd", or "bronze"
 #'
-#'#@return Character vector of emojis.
+#' @return Character vector of emojis.
 #' @export
 #' @examples
 #' medal(1:3)

@@ -10,7 +10,7 @@ emoji_detect(string, negate = FALSE)
 \item{string}{Input vector. Either a character vector, or something coercible
 to one.}
 
-\item{negate}{If \code{TRUE}, return non-matching elements.}
+\item{negate}{If \code{TRUE}, inverts the resulting boolean vector.}
 }
 \value{
 A logical vector
