@@ -82,23 +82,22 @@
 <span></span>
 <span><span class="va">emojis</span></span>
 <span><span class="co">#&gt; # A tibble: 4,702 × 19</span></span>
-<span><span class="co">#&gt;    emoji name  group subgr…¹ version points nrunes runes quali…² vendo…³ vendo…⁴</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;list&gt;  &lt;int&gt; &lt;chr&gt; &lt;chr&gt;   &lt;lgl&gt;   &lt;lgl&gt;  </span></span>
-<span><span class="co">#&gt;  1 😀    grin… Smil… face-s… 1.0     &lt;int&gt;       1 1F600 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  2 😃    grin… Smil… face-s… 0.6     &lt;int&gt;       1 1F603 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  3 😄    grin… Smil… face-s… 0.6     &lt;int&gt;       1 1F604 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  4 😁    beam… Smil… face-s… 0.6     &lt;int&gt;       1 1F601 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  5 😆    grin… Smil… face-s… 0.6     &lt;int&gt;       1 1F606 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  6 😅    grin… Smil… face-s… 0.6     &lt;int&gt;       1 1F605 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  7 🤣    roll… Smil… face-s… 3.0     &lt;int&gt;       1 1F923 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  8 😂    face… Smil… face-s… 0.6     &lt;int&gt;       1 1F602 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt;  9 🙂    slig… Smil… face-s… 1.0     &lt;int&gt;       1 1F642 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt; 10 🙃    upsi… Smil… face-s… 1.0     &lt;int&gt;       1 1F643 fully-… TRUE    TRUE   </span></span>
-<span><span class="co">#&gt; # … with 4,692 more rows, 8 more variables: vendor_twitter &lt;lgl&gt;,</span></span>
+<span><span class="co">#&gt;    emoji name  group subgroup version points nrunes runes qualified vendor_apple</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;list&gt;  &lt;int&gt; &lt;chr&gt; &lt;chr&gt;     &lt;lgl&gt;       </span></span>
+<span><span class="co">#&gt;  1 😀    grin… Smil… face-sm… 1.0     &lt;int&gt;       1 1F600 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  2 😃    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F603 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  3 😄    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F604 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  4 😁    beam… Smil… face-sm… 0.6     &lt;int&gt;       1 1F601 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  5 😆    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F606 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  6 😅    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F605 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  7 🤣    roll… Smil… face-sm… 3.0     &lt;int&gt;       1 1F923 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  8 😂    face… Smil… face-sm… 0.6     &lt;int&gt;       1 1F602 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt;  9 🙂    slig… Smil… face-sm… 1.0     &lt;int&gt;       1 1F642 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt; 10 🙃    upsi… Smil… face-sm… 1.0     &lt;int&gt;       1 1F643 fully-qu… TRUE        </span></span>
+<span><span class="co">#&gt; # ℹ 4,692 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 9 more variables: vendor_google &lt;lgl&gt;, vendor_twitter &lt;lgl&gt;,</span></span>
 <span><span class="co">#&gt; #   vendor_one &lt;lgl&gt;, vendor_facebook &lt;lgl&gt;, vendor_messenger &lt;lgl&gt;,</span></span>
-<span><span class="co">#&gt; #   vendor_samsung &lt;lgl&gt;, vendor_windows &lt;lgl&gt;, keywords &lt;list&gt;,</span></span>
-<span><span class="co">#&gt; #   aliases &lt;list&gt;, and abbreviated variable names ¹​subgroup, ²​qualified,</span></span>
-<span><span class="co">#&gt; #   ³​vendor_apple, ⁴​vendor_google</span></span></code></pre></div>
+<span><span class="co">#&gt; #   vendor_samsung &lt;lgl&gt;, vendor_windows &lt;lgl&gt;, keywords &lt;list&gt;, aliases &lt;list&gt;</span></span></code></pre></div>
 <p>the <code>emoji_name</code> is a vector of emojis with descriptive names</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">emoji_name</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">]</span></span>
@@ -225,6 +224,7 @@
 <li><a href="https://CRAN.R-project.org/package=emoji" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/emoji" alt="Downloads"></a></li>
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="lifecycle"></a></li>
 <li><a href="https://app.codecov.io/gh/EmilHvitfeldt/emoji?branch=main" class="external-link"><img src="https://codecov.io/gh/EmilHvitfeldt/emoji/branch/main/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://app.codecov.io/gh/EmilHvitfeldt/emoji" class="external-link"><img src="https://codecov.io/gh/EmilHvitfeldt/emoji/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 
