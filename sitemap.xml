@@ -1,111 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/arrow.html</loc>
-  </url>
-  <url>
-    <loc>/reference/clock.html</loc>
-  </url>
-  <url>
-    <loc>/reference/day_in_synodic_cycle.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_count.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_detect.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_extract.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_find.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_fix.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_glue.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_keyword.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_locate.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_match.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_modifier_extract.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_modifier_remove.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_modifiers.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_name.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_p.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_replace.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_rx.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emoji_subset.html</loc>
-  </url>
-  <url>
-    <loc>/reference/emojis.html</loc>
-  </url>
-  <url>
-    <loc>/reference/flag.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/keycap.html</loc>
-  </url>
-  <url>
-    <loc>/reference/medal.html</loc>
-  </url>
-  <url>
-    <loc>/reference/moon.html</loc>
-  </url>
-  <url>
-    <loc>/reference/shape.html</loc>
-  </url>
-  <url>
-    <loc>/reference/zoo.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/arrow.html</loc></url>
+<url><loc>/reference/clock.html</loc></url>
+<url><loc>/reference/day_in_synodic_cycle.html</loc></url>
+<url><loc>/reference/emoji.html</loc></url>
+<url><loc>/reference/emoji_count.html</loc></url>
+<url><loc>/reference/emoji_detect.html</loc></url>
+<url><loc>/reference/emoji_extract.html</loc></url>
+<url><loc>/reference/emoji_find.html</loc></url>
+<url><loc>/reference/emoji_fix.html</loc></url>
+<url><loc>/reference/emoji_glue.html</loc></url>
+<url><loc>/reference/emoji_keyword.html</loc></url>
+<url><loc>/reference/emoji_locate.html</loc></url>
+<url><loc>/reference/emoji_match.html</loc></url>
+<url><loc>/reference/emoji_modifier_extract.html</loc></url>
+<url><loc>/reference/emoji_modifier_remove.html</loc></url>
+<url><loc>/reference/emoji_modifiers.html</loc></url>
+<url><loc>/reference/emoji_name.html</loc></url>
+<url><loc>/reference/emoji_p.html</loc></url>
+<url><loc>/reference/emoji_replace.html</loc></url>
+<url><loc>/reference/emoji_rx.html</loc></url>
+<url><loc>/reference/emoji_subset.html</loc></url>
+<url><loc>/reference/emojis.html</loc></url>
+<url><loc>/reference/flag.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/keycap.html</loc></url>
+<url><loc>/reference/medal.html</loc></url>
+<url><loc>/reference/moon.html</loc></url>
+<url><loc>/reference/shape.html</loc></url>
+<url><loc>/reference/zoo.html</loc></url>
 </urlset>
+
