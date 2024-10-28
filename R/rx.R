@@ -164,6 +164,42 @@ emoji_replace_all <- function(string, replacement) {
   str_replace_all(string, emoji::emoji_rx, replacement)
 }
 
+#' Replace emojis in a string with name
+#'
+#' Vectorised over `string`
+#'
+#' Each emoji is replaced with human readable string in the form 
+#' `:name_of_emoji:`.
+#' 
+#' @param string Input vector
+#'
+#' @return A character vector
+#'
+#' @examples
+#' example <- c(
+#'   paste0("This is an emoji; ", emoji("person_facepalming")),
+#'   paste0("You can write slides in ", emoji("key"), emoji("musical_note"))
+#' )
+#' 
+#' example
+#' 
+#' emoji_replace_name(example)
+#' @export
+emoji_replace_name <- function(string) {
+  emoji_dict <- stats::setNames(
+    paste0(":", names(emoji::emoji_name), ":"),
+    unname(emoji::emoji_name)
+  )
+
+  # these two emojis mess things up
+  emoji_dict <- emoji_dict[!emoji_dict %in% c(":asterisk:", ":keycap_star:")]
+  
+  # make sure emojis with qualifiers gets replaces first
+  emoji_dict <- rev(sort(emoji_dict))
+  
+  stringr::str_replace_all(string, emoji_dict)
+}
+
 #' Locate the position of emojis in a string
 #'
 #' Vectorised over `string`
