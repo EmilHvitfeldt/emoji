@@ -1,6 +1,6 @@
 Package: emoji
 Title: Data and Function to Work with Emojis
-Version: 15.0.0.9000
+Version: 16.0.0
 Authors@R: c(
     person("Emil", "Hvitfeldt", , "emilhhvitfeldt@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-0679-1945")),
