@@ -14,11 +14,11 @@ download_emoji <- function() {
     dir.create("data-raw/emoji_current")
   }
   download.file(
-    url = "https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html",
+    url = "https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html",
     destfile = "data-raw/emoji_current/full-emoji-list.html"
   )
   download.file(
-    url = "https://www.unicode.org/emoji/charts-15.0/emoji-list.html",
+    url = "https://www.unicode.org/emoji/charts-16.0/emoji-list.html",
     destfile = "data-raw/emoji_current/emoji-list.html"
   )
 }
@@ -32,13 +32,13 @@ download_tr51 <- function() {
                 destfile = "data-raw/tr51/emoji-ordering.txt")
 
 
-  download.file("https://www.unicode.org/Public/14.0.0/ucd/emoji/emoji-data.txt",
+  download.file("https://www.unicode.org/Public/16.0.0/ucd/emoji/emoji-data.txt",
                 destfile = "data-raw/tr51/emoji-data.txt")
 
   files <- c("emoji-sequences.txt", "emoji-test.txt", "emoji-zwj-sequences.txt")
 
   walk(files, ~ {
-    url <- glue("https://www.unicode.org/Public/emoji/14.0/{file}", file = .x)
+    url <- glue("https://www.unicode.org/Public/emoji/16.0/{file}", file = .x)
     dest <- glue("data-raw/tr51/{file}", file = .x)
     download.file(url, destfile = dest)
   })

@@ -5,7 +5,7 @@
 \alias{emoji_name}
 \title{Emoji Names}
 \format{
-named character vector with 4538 elements
+named character vector with 4698 elements
 }
 \source{
 \href{https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html}{Unicode® Full Emoji Charts v15.0}

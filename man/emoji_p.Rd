@@ -44,7 +44,7 @@ emoji_p(rbeta(50, 2, 5))
 
 emoji_p(
   runif(100, 0, 0.1),
-  names = c("flexed biceps", "hundred points", "thumbs down", "thumbs up"),
+  names = c("biceps", "hundred", "thumbs_down", "thumbs_up"),
   cutpoints = c(0.001, 0.01, 0.05)
 )
 }
