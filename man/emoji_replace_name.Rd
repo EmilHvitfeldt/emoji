@@ -21,9 +21,11 @@ Each emoji is replaced with human readable string in the form
 }
 \examples{
 example <- c(
-  "These are emojis; 🤦 and 🤦🏼",
-  "You can write slides in 🔑🎵"
+  paste0("This is an emoji; ", emoji("person_facepalming")),
+  paste0("You can write slides in ", emoji("key"), emoji("musical_note"))
 )
+
+example
 
 emoji_replace_name(example)
 }
