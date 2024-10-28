@@ -22,6 +22,7 @@ reference:
     - emoji_fix
     - emoji_modifier_remove
     - emoji_modifier_extract
+    - emoji_replace_name
   - title: Novelty Emoji Functions
     desc: >
       Fun set of functions to return emojis based on a group.
