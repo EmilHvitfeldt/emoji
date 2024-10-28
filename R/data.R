@@ -1,11 +1,11 @@
 #' Full List of Emojis
 #'
 #' This data set is the heart of the emoji package. It contains various
-#' information regarding all the avaiable emojis as of v15.0.
+#' information regarding all the avaiable emojis as of v16.0.
 #'
-#' @source [Unicode® Full Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html)
-#' @source [Unicode® Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/emoji-list.html)
-#' @source [Unicode® Emoji Ordering, v15.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
+#' @source [Unicode® Full Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html)
+#' @source [Unicode® Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/emoji-list.html)
+#' @source [Unicode® Emoji Ordering, v16.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
 #' @source \url{https://github.com/github/gemoji}
 #' @source \url{https://github.com/muan/emojilib}
 #'
@@ -51,9 +51,9 @@
 #' associated with them. Such as "grinning" and "grinning_face" leading to the
 #' same emoji.
 #'
-#' @source [Unicode® Full Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html)
-#' @source [Unicode® Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/emoji-list.html)
-#' @source [Unicode® Emoji Ordering, v15.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
+#' @source [Unicode® Full Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html)
+#' @source [Unicode® Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/emoji-list.html)
+#' @source [Unicode® Emoji Ordering, v16.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
 #' @source \url{https://github.com/github/gemoji}
 #' @source \url{https://github.com/muan/emojilib}
 #'
@@ -67,9 +67,9 @@
 #' This list contains information about which emojis are contained in which
 #' keywords.
 #'
-#' @source [Unicode® Full Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html)
-#' @source [Unicode® Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/emoji-list.html)
-#' @source [Unicode® Emoji Ordering, v15.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
+#' @source [Unicode® Full Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html)
+#' @source [Unicode® Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/emoji-list.html)
+#' @source [Unicode® Emoji Ordering, v16.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
 #' @source \url{https://github.com/github/gemoji}
 #' @source \url{https://github.com/muan/emojilib}
 #'
@@ -83,9 +83,9 @@
 #' This data set contains all the emojis with modifiers, their unmodified
 #' version as well as a list of the the modifiers.
 #'
-#' @source [Unicode® Full Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html)
-#' @source [Unicode® Emoji Charts v15.0](https://www.unicode.org/emoji/charts-15.0/emoji-list.html)
-#' @source [Unicode® Emoji Ordering, v15.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
+#' @source [Unicode® Full Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html)
+#' @source [Unicode® Emoji Charts v16.0](https://www.unicode.org/emoji/charts-16.0/emoji-list.html)
+#' @source [Unicode® Emoji Ordering, v16.0](https://www.unicode.org/emoji/charts/emoji-ordering.txt)
 #' @source \url{https://github.com/github/gemoji}
 #' @source \url{https://github.com/muan/emojilib}
 #'

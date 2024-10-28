@@ -8,11 +8,11 @@
 named character vector with 4698 elements
 }
 \source{
-\href{https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html}{Unicode® Full Emoji Charts v15.0}
+\href{https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html}{Unicode® Full Emoji Charts v16.0}
 
-\href{https://www.unicode.org/emoji/charts-15.0/emoji-list.html}{Unicode® Emoji Charts v15.0}
+\href{https://www.unicode.org/emoji/charts-16.0/emoji-list.html}{Unicode® Emoji Charts v16.0}
 
-\href{https://www.unicode.org/emoji/charts/emoji-ordering.txt}{Unicode® Emoji Ordering, v15.0}
+\href{https://www.unicode.org/emoji/charts/emoji-ordering.txt}{Unicode® Emoji Ordering, v16.0}
 
 \url{https://github.com/github/gemoji}
 
