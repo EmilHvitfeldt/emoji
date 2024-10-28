@@ -22,6 +22,9 @@
 emoji <- function(keyword) {
   stopifnot(is.character(keyword), length(keyword) == 1)
 
+  keyword <- tolower(keyword)
+  keyword <- stringr::str_replace_all(keyword, "[ \\-_]+", "_")
+
   # First look in names
   if (keyword %in% names(emoji::emoji_name)) {
     return(emoji::emoji_name[[keyword]])
