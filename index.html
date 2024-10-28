@@ -29,7 +29,7 @@
 
     <a class="navbar-brand me-2" href="index.html">emoji</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">15.0.0.9000</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">16.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,20 +81,20 @@
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://emilhvitfeldt.github.io/emoji/" class="external-link">emoji</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">emojis</span></span>
-<span><span class="co">#&gt; # A tibble: 4,702 × 19</span></span>
+<span><span class="co">#&gt; # A tibble: 5,042 × 19</span></span>
 <span><span class="co">#&gt;    emoji name  group subgroup version points nrunes runes qualified vendor_apple</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;list&gt;  &lt;int&gt; &lt;chr&gt; &lt;chr&gt;     &lt;lgl&gt;       </span></span>
-<span><span class="co">#&gt;  1 😀    grin… Smil… face-sm… 1.0     &lt;int&gt;       1 1F600 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  2 😃    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F603 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  3 😄    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F604 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  4 😁    beam… Smil… face-sm… 0.6     &lt;int&gt;       1 1F601 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  5 😆    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F606 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  6 😅    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F605 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  7 🤣    roll… Smil… face-sm… 3.0     &lt;int&gt;       1 1F923 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  8 😂    face… Smil… face-sm… 0.6     &lt;int&gt;       1 1F602 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt;  9 🙂    slig… Smil… face-sm… 1.0     &lt;int&gt;       1 1F642 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt; 10 🙃    upsi… Smil… face-sm… 1.0     &lt;int&gt;       1 1F643 fully-qu… TRUE        </span></span>
-<span><span class="co">#&gt; # ℹ 4,692 more rows</span></span>
+<span><span class="co">#&gt;  1 😀    grin… Smil… face-sm… 1.0     &lt;int&gt;       1 1F600 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  2 😃    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F603 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  3 😄    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F604 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  4 😁    beam… Smil… face-sm… 0.6     &lt;int&gt;       1 1F601 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  5 😆    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F606 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  6 😅    grin… Smil… face-sm… 0.6     &lt;int&gt;       1 1F605 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  7 🤣    roll… Smil… face-sm… 3.0     &lt;int&gt;       1 1F923 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  8 😂    face… Smil… face-sm… 0.6     &lt;int&gt;       1 1F602 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt;  9 🙂    slig… Smil… face-sm… 1.0     &lt;int&gt;       1 1F642 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt; 10 🙃    upsi… Smil… face-sm… 1.0     &lt;int&gt;       1 1F643 fully-qu… FALSE       </span></span>
+<span><span class="co">#&gt; # ℹ 5,032 more rows</span></span>
 <span><span class="co">#&gt; # ℹ 9 more variables: vendor_google &lt;lgl&gt;, vendor_twitter &lt;lgl&gt;,</span></span>
 <span><span class="co">#&gt; #   vendor_one &lt;lgl&gt;, vendor_facebook &lt;lgl&gt;, vendor_messenger &lt;lgl&gt;,</span></span>
 <span><span class="co">#&gt; #   vendor_samsung &lt;lgl&gt;, vendor_windows &lt;lgl&gt;, keywords &lt;list&gt;, aliases &lt;list&gt;</span></span></code></pre></div>
@@ -114,62 +114,43 @@
 <p>Each of the emojis have zero or more keywords associated with them.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">emoji_keyword</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">150</span><span class="op">:</span><span class="fl">155</span><span class="op">)</span><span class="op">]</span></span>
-<span><span class="co">#&gt; $Aries</span></span>
-<span><span class="co">#&gt; [1] "ram"   "aries"</span></span>
+<span><span class="co">#&gt; $`TRUE`</span></span>
+<span><span class="co">#&gt; [1] "100"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $army</span></span>
-<span><span class="co">#&gt; [1] "military_helmet"</span></span>
+<span><span class="co">#&gt; $Taurus</span></span>
+<span><span class="co">#&gt; [1] "ox"     "taurus"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $arrivals</span></span>
-<span><span class="co">#&gt; [1] "flight_arrival"</span></span>
+<span><span class="co">#&gt; $Tegh</span></span>
+<span><span class="co">#&gt; [1] "khanda"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $arriving</span></span>
-<span><span class="co">#&gt; [1] "flight_arrival"</span></span>
+<span><span class="co">#&gt; $Titania</span></span>
+<span><span class="co">#&gt; [1] "fairy_woman"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $arrow</span></span>
-<span><span class="co">#&gt;  [1] "cupid"                     "calling"                  </span></span>
-<span><span class="co">#&gt;  [3] "envelope_with_arrow"       "bow_and_arrow"            </span></span>
-<span><span class="co">#&gt;  [5] "up_arrow"                  "up_right_arrow"           </span></span>
-<span><span class="co">#&gt;  [7] "right_arrow"               "down_right_arrow"         </span></span>
-<span><span class="co">#&gt;  [9] "down_arrow"                "down_left_arrow"          </span></span>
-<span><span class="co">#&gt; [11] "left_arrow"                "up_left_arrow"            </span></span>
-<span><span class="co">#&gt; [13] "up_down_arrow"             "right_arrow_curving_left" </span></span>
-<span><span class="co">#&gt; [15] "left_arrow_curving_right"  "right_arrow_curving_up"   </span></span>
-<span><span class="co">#&gt; [17] "right_arrow_curving_down"  "arrows_clockwise"         </span></span>
-<span><span class="co">#&gt; [19] "arrows_counterclockwise"   "back"                     </span></span>
-<span><span class="co">#&gt; [21] "end"                       "on"                       </span></span>
-<span><span class="co">#&gt; [23] "soon"                      "top"                      </span></span>
-<span><span class="co">#&gt; [25] "twisted_rightwards_arrows" "repeat"                   </span></span>
-<span><span class="co">#&gt; [27] "repeat_one"                "play_button"              </span></span>
-<span><span class="co">#&gt; [29] "fast_forward"              "reverse_button"           </span></span>
-<span><span class="co">#&gt; [31] "rewind"                    "last_track_button"        </span></span>
-<span><span class="co">#&gt; [33] "arrow_up_small"            "arrow_double_up"          </span></span>
-<span><span class="co">#&gt; [35] "arrow_down_small"          "arrow_double_down"        </span></span>
+<span><span class="co">#&gt; $Tokyo</span></span>
+<span><span class="co">#&gt; [1] "tokyo_tower"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $art</span></span>
-<span><span class="co">#&gt; [1] "performing_arts" "art"</span></span></code></pre></div>
+<span><span class="co">#&gt; $Triton</span></span>
+<span><span class="co">#&gt; [1] "merman"</span></span></code></pre></div>
 <p>when can use <code>emoji_keyword</code> together with <code>emoji_name</code> to show then emojis for each keyword.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="va">emoji_keyword</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">150</span><span class="op">:</span><span class="fl">155</span><span class="op">)</span><span class="op">]</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/base/unname.html" class="external-link">unname</a></span><span class="op">(</span><span class="va">emoji_name</span><span class="op">[</span><span class="va">x</span><span class="op">]</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; $Aries</span></span>
-<span><span class="co">#&gt; [1] "🐏" "♈"</span></span>
+<span><span class="co">#&gt; $`TRUE`</span></span>
+<span><span class="co">#&gt; [1] "💯"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $army</span></span>
-<span><span class="co">#&gt; [1] "🪖"</span></span>
+<span><span class="co">#&gt; $Taurus</span></span>
+<span><span class="co">#&gt; [1] "🐂" "♉"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $arrivals</span></span>
-<span><span class="co">#&gt; [1] "🛬"</span></span>
+<span><span class="co">#&gt; $Tegh</span></span>
+<span><span class="co">#&gt; [1] "\U{01faaf}"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $arriving</span></span>
-<span><span class="co">#&gt; [1] "🛬"</span></span>
+<span><span class="co">#&gt; $Titania</span></span>
+<span><span class="co">#&gt; [1] "🧚‍♀️"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $arrow</span></span>
-<span><span class="co">#&gt;  [1] "💘" "📲" "📩" "🏹" "⬆️"  "↗️"  "➡️"  "↘️"  "⬇️"  "↙️"  "⬅️"  "↖️"  "↕️"  "↩️"  "↪️" </span></span>
-<span><span class="co">#&gt; [16] "⤴️"  "⤵️"  "🔃" "🔄" "🔙" "🔚" "🔛" "🔜" "🔝" "🔀" "🔁" "🔂" "▶️"  "⏩" "◀️" </span></span>
-<span><span class="co">#&gt; [31] "⏪" "⏮️"  "🔼" "⏫" "🔽" "⏬"</span></span>
+<span><span class="co">#&gt; $Tokyo</span></span>
+<span><span class="co">#&gt; [1] "🗼"</span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt; $art</span></span>
-<span><span class="co">#&gt; [1] "🎭" "🎨"</span></span></code></pre></div>
+<span><span class="co">#&gt; $Triton</span></span>
+<span><span class="co">#&gt; [1] "🧜‍♂️"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
