@@ -1,5 +1,8 @@
 # emoji (development version)
 
+* Updated data to include Emoji v16.0. ($16)
+* `emoji()` is now more relaxed about input. (#20)
+
 # emoji 15.0
 
 * Package version will now reflect the emoji version set by Unicode.
