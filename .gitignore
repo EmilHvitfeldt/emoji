@@ -8,3 +8,7 @@ data-raw/emoji_current
 data-raw/emojilib
 data-raw/gemoji
 data-raw/tr51
+revdep/checks.noindex
+revdep/library.noindex
+revdep/data.sqlite
+revdep/cloud.noindex/*

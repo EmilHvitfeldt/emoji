@@ -26,11 +26,11 @@ vendor supports the emoji}
 }
 }
 \source{
-\href{https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html}{Unicode® Full Emoji Charts v15.0}
+Unicode® Full Emoji Charts v16.0 - https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html
 
-\href{https://www.unicode.org/emoji/charts-15.0/emoji-list.html}{Unicode® Emoji Charts v15.0}
+Unicode® Emoji Charts v16.0 - https://www.unicode.org/emoji/charts-16.0/emoji-list.html
 
-\href{https://www.unicode.org/emoji/charts/emoji-ordering.txt}{Unicode® Emoji Ordering, v15.0}
+Unicode® Emoji Ordering, v16.0 - https://www.unicode.org/emoji/charts/emoji-ordering.txt
 
 \url{https://github.com/github/gemoji}
 
@@ -41,7 +41,7 @@ emojis
 }
 \description{
 This data set is the heart of the emoji package. It contains various
-information regarding all the avaiable emojis as of v15.0.
+information regarding all the avaiable emojis as of v16.0.
 }
 \details{
 The levels of \code{qualified} have the following meaining

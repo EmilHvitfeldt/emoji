@@ -6,4 +6,4 @@
 
 ## Reverse dependencies
 
-Checked all 5 reverse dependencies. No issues.
+Checked all 7 reverse dependencies. No issues.

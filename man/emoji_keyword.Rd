@@ -8,13 +8,11 @@
 named list of characters with 7665 elements
 }
 \source{
-\href{https://www.unicode.org/emoji/charts-15.0/full-emoji-list.html}{Unicode® Full Emoji Charts v15.0}
+Unicode® Full Emoji Charts v16.0 - https://www.unicode.org/emoji/charts-16.0/full-emoji-list.html
 
-\href{https://www.unicode.org/emoji/charts-15.0/emoji-list.html}{Unicode® Emoji Charts v15.0}
+Unicode® Emoji Charts v16.0 - https://www.unicode.org/emoji/charts-16.0/emoji-list.html
 
-\href{https://www.unicode.org/emoji/charts/emoji-ordering.txt}{Unicode® Emoji Ordering, v15.0}
-
-\url{https://github.com/github/gemoji}
+Unicode® Emoji Ordering, v16.0 - https://www.unicode.org/emoji/charts/emoji-ordering.txt#' @source \url{https://github.com/github/gemoji}
 
 \url{https://github.com/muan/emojilib}
 }
