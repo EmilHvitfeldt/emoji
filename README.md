@@ -44,20 +44,20 @@ contains almost all the information contained in this package.
 library(emoji)
 
 emojis
-#> # A tibble: 4,702 × 19
+#> # A tibble: 5,042 × 19
 #>    emoji name  group subgroup version points nrunes runes qualified vendor_apple
 #>    <chr> <chr> <chr> <chr>    <chr>   <list>  <int> <chr> <chr>     <lgl>       
-#>  1 😀    grin… Smil… face-sm… 1.0     <int>       1 1F600 fully-qu… TRUE        
-#>  2 😃    grin… Smil… face-sm… 0.6     <int>       1 1F603 fully-qu… TRUE        
-#>  3 😄    grin… Smil… face-sm… 0.6     <int>       1 1F604 fully-qu… TRUE        
-#>  4 😁    beam… Smil… face-sm… 0.6     <int>       1 1F601 fully-qu… TRUE        
-#>  5 😆    grin… Smil… face-sm… 0.6     <int>       1 1F606 fully-qu… TRUE        
-#>  6 😅    grin… Smil… face-sm… 0.6     <int>       1 1F605 fully-qu… TRUE        
-#>  7 🤣    roll… Smil… face-sm… 3.0     <int>       1 1F923 fully-qu… TRUE        
-#>  8 😂    face… Smil… face-sm… 0.6     <int>       1 1F602 fully-qu… TRUE        
-#>  9 🙂    slig… Smil… face-sm… 1.0     <int>       1 1F642 fully-qu… TRUE        
-#> 10 🙃    upsi… Smil… face-sm… 1.0     <int>       1 1F643 fully-qu… TRUE        
-#> # ℹ 4,692 more rows
+#>  1 😀    grin… Smil… face-sm… 1.0     <int>       1 1F600 fully-qu… FALSE       
+#>  2 😃    grin… Smil… face-sm… 0.6     <int>       1 1F603 fully-qu… FALSE       
+#>  3 😄    grin… Smil… face-sm… 0.6     <int>       1 1F604 fully-qu… FALSE       
+#>  4 😁    beam… Smil… face-sm… 0.6     <int>       1 1F601 fully-qu… FALSE       
+#>  5 😆    grin… Smil… face-sm… 0.6     <int>       1 1F606 fully-qu… FALSE       
+#>  6 😅    grin… Smil… face-sm… 0.6     <int>       1 1F605 fully-qu… FALSE       
+#>  7 🤣    roll… Smil… face-sm… 3.0     <int>       1 1F923 fully-qu… FALSE       
+#>  8 😂    face… Smil… face-sm… 0.6     <int>       1 1F602 fully-qu… FALSE       
+#>  9 🙂    slig… Smil… face-sm… 1.0     <int>       1 1F642 fully-qu… FALSE       
+#> 10 🙃    upsi… Smil… face-sm… 1.0     <int>       1 1F643 fully-qu… FALSE       
+#> # ℹ 5,032 more rows
 #> # ℹ 9 more variables: vendor_google <lgl>, vendor_twitter <lgl>,
 #> #   vendor_one <lgl>, vendor_facebook <lgl>, vendor_messenger <lgl>,
 #> #   vendor_samsung <lgl>, vendor_windows <lgl>, keywords <list>, aliases <list>
@@ -83,40 +83,23 @@ Each of the emojis have zero or more keywords associated with them.
 
 ``` r
 emoji_keyword[c(150:155)]
-#> $Aries
-#> [1] "ram"   "aries"
+#> $`TRUE`
+#> [1] "100"
 #> 
-#> $army
-#> [1] "military_helmet"
+#> $Taurus
+#> [1] "ox"     "taurus"
 #> 
-#> $arrivals
-#> [1] "flight_arrival"
+#> $Tegh
+#> [1] "khanda"
 #> 
-#> $arriving
-#> [1] "flight_arrival"
+#> $Titania
+#> [1] "fairy_woman"
 #> 
-#> $arrow
-#>  [1] "cupid"                     "calling"                  
-#>  [3] "envelope_with_arrow"       "bow_and_arrow"            
-#>  [5] "up_arrow"                  "up_right_arrow"           
-#>  [7] "right_arrow"               "down_right_arrow"         
-#>  [9] "down_arrow"                "down_left_arrow"          
-#> [11] "left_arrow"                "up_left_arrow"            
-#> [13] "up_down_arrow"             "right_arrow_curving_left" 
-#> [15] "left_arrow_curving_right"  "right_arrow_curving_up"   
-#> [17] "right_arrow_curving_down"  "arrows_clockwise"         
-#> [19] "arrows_counterclockwise"   "back"                     
-#> [21] "end"                       "on"                       
-#> [23] "soon"                      "top"                      
-#> [25] "twisted_rightwards_arrows" "repeat"                   
-#> [27] "repeat_one"                "play_button"              
-#> [29] "fast_forward"              "reverse_button"           
-#> [31] "rewind"                    "last_track_button"        
-#> [33] "arrow_up_small"            "arrow_double_up"          
-#> [35] "arrow_down_small"          "arrow_double_down"        
+#> $Tokyo
+#> [1] "tokyo_tower"
 #> 
-#> $art
-#> [1] "performing_arts" "art"
+#> $Triton
+#> [1] "merman"
 ```
 
 when can use `emoji_keyword` together with `emoji_name` to show then
@@ -124,25 +107,23 @@ emojis for each keyword.
 
 ``` r
 lapply(emoji_keyword[c(150:155)], function(x) unname(emoji_name[x]))
-#> $Aries
-#> [1] "🐏" "♈"
+#> $`TRUE`
+#> [1] "💯"
 #> 
-#> $army
-#> [1] "🪖"
+#> $Taurus
+#> [1] "🐂" "♉"
 #> 
-#> $arrivals
-#> [1] "🛬"
+#> $Tegh
+#> [1] "\U{01faaf}"
 #> 
-#> $arriving
-#> [1] "🛬"
+#> $Titania
+#> [1] "🧚‍♀️"
 #> 
-#> $arrow
-#>  [1] "💘" "📲" "📩" "🏹" "⬆️"  "↗️"  "➡️"  "↘️"  "⬇️"  "↙️"  "⬅️"  "↖️"  "↕️"  "↩️"  "↪️" 
-#> [16] "⤴️"  "⤵️"  "🔃" "🔄" "🔙" "🔚" "🔛" "🔜" "🔝" "🔀" "🔁" "🔂" "▶️"  "⏩" "◀️" 
-#> [31] "⏪" "⏮️"  "🔼" "⏫" "🔽" "⏬"
+#> $Tokyo
+#> [1] "🗼"
 #> 
-#> $art
-#> [1] "🎭" "🎨"
+#> $Triton
+#> [1] "🧜‍♂️"
 ```
 
 ## Code of Conduct
